@@ -1,0 +1,34 @@
+# Mehrad Yaghoubi
+
+> Graduate researcher and M.Sc. student in Artificial Intelligence at the Faculty of Artificial Intelligence, Islamic Azad University, Karaj, Iran.
+
+Mehrad Yaghoubi works on efficient deep learning, visual speech recognition (VSR), lip-reading, and knowledge distillation. His research explores lightweight temporal models, dynamic frame selection, and uncertainty-aware learning. He also builds practical computer vision and AI tools.
+
+## Research papers
+
+- [Entropy-Gated Online Self-Distillation for Visual Speech Recognition Based on Connectionist Temporal Classification](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6831426) — Mehrad Yaghoubi and Azam Bastanfard, 2026. Preprint; the author's current CV lists the manuscript as under peer review at The Visual Computer. Uses frame-level uncertainty to guide online self-distillation in lightweight VSR models.
+- [Belief-Guided Decision Making with Uncertainty Gating in the Game of Go](https://arxiv.org/abs/2607.26946) — Mehrad Yaghoubi, Azam Bastanfard, Abbas Jalilvand, and Ashkan Rezaei, 2026. arXiv preprint.
+
+## Selected work
+
+- [PyLipExtractor](https://github.com/MehradYaghoubi/pylipextractor) — open-source Python package for extracting lip regions from video with MediaPipe Face Mesh. Includes temporal smoothing, optional illumination normalization, configurable processing, and CPU/CUDA support.
+- [Parseh Gasht](https://parsegasht.com/) — website built with a custom WordPress theme.
+- [Service and commerce website](http://shofazhyaghoubi.ir/) — website developed by Mehrad Yaghoubi.
+- OCR tool connected to an API — developed project.
+- Chatbot — in development.
+
+## Education and teaching
+
+- M.Sc. student in Artificial Intelligence, Islamic Azad University, Karaj.
+- B.Sc. in Computer Science (Software Engineering), Islamic Azad University, Karaj.
+- Teaching experience in data structures, programming, robotics, C#, and Unity.
+
+## Profiles and contact
+
+- [Portfolio and research overview](https://mehradyaghoubi.github.io/)
+- [GitHub](https://github.com/MehradYaghoubi)
+- [Google Scholar](https://scholar.google.com/citations?user=7X057KcAAAAJ)
+- [ResearchGate](https://www.researchgate.net/profile/Merhrad-Yaghoubi)
+- [ORCID](https://orcid.org/0009-0001-8116-5864)
+- [LinkedIn](https://www.linkedin.com/in/mehrad-yaghoubi)
+- Email: mehradyaghoubi96@gmail.com

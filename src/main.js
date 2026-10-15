@@ -3,18 +3,20 @@ import './style.css';
 
 const translations = {
   fa: {
-    skip: 'رفتن به محتوای اصلی', navResearch: 'پژوهش', navWork: 'پروژه‌ها', navAbout: 'درباره من', navContact: 'در تماس باشیم',
+    skip: 'رفتن به محتوای اصلی', navProfile: 'معرفی', navResearch: 'پژوهش', navPublications: 'مقاله‌ها', navWork: 'نمونه‌کارها', navAbout: 'درباره من', navContact: 'ارتباط',
     kicker: 'پژوهشگر هوش مصنوعی · بازشناسی گفتار دیداری', heroTitle: 'گفتار را<br />قابل دیدن می‌کنم.',
-    heroIntro: 'من مهراد یعقوبی هستم. در مرز بینایی ماشین و یادگیری ماشین کار می‌کنم و بررسی می‌کنم ماشین‌ها چطور از نشانه‌های دیداری، گفتار را درک می‌کنند.',
-    exploreWork: 'دیدن پروژه‌ها', contactLink: 'ارتباط با من', heroMeta: 'ایران · آماده‌ی همکاری پژوهشی', visualCaption: 'ردّی دیداری از زبان گفتار', scroll: 'برای ادامه اسکرول کنید',
+    heroIntro: 'من مهراد یعقوبی هستم؛ پژوهشگر تحصیلات تکمیلی در حوزهٔ هوش مصنوعی در دانشگاه آزاد اسلامی واحد کرج. بررسی می‌کنم ماشین‌ها چگونه گفتار را از حرکت لب‌ها تشخیص می‌دهند و چطور می‌توان این مدل‌ها را کارآمدتر کرد.',
+    exploreWork: 'دیدن نمونه‌کارها', contactLink: 'ارتباط با من', heroMeta: 'کرج، ایران · آمادهٔ همکاری پژوهشی', visualCaption: 'ردّی دیداری از زبان گفتار', scroll: 'برای ادامه اسکرول کنید',
+    profileTitle: 'معرفی در یک نگاه', profileIntro: 'خلاصه‌ای برای استادان و همکاران پژوهشی.', profileStudyLabel: 'موقعیت علمی', profileStudy: 'دانشجوی کارشناسی ارشد و پژوهشگر هوش مصنوعی', profileInstitutionLabel: 'دانشگاه', profileInstitution: 'دانشکدهٔ هوش مصنوعی، دانشگاه آزاد اسلامی واحد کرج', profileFocusLabel: 'حوزهٔ پژوهش', profileFocus: 'یادگیری عمیق کارآمد، بازشناسی گفتار دیداری و انتقال دانش', profileProjectLabel: 'پروژهٔ متن‌باز',
     researchKicker: 'پرسشی که دنبال می‌کنم', researchTitle: 'چهره چه چیزی درباره‌ی<br class="desktop-break" /> صدا به ما می‌گوید؟',
-    researchBody: 'بازشناسی گفتار دیداری با بررسی حرکت صورت، به‌ویژه لب‌ها، واژه‌های گفته‌شده را تشخیص می‌دهد. پژوهش من بر روش‌های یادگیری عمیق برای لب‌خوانی تمرکز دارد؛ جایی که حرکت‌های ظریف، زمان‌بندی و بافت اهمیت دارند.',
-    workKicker: 'ساخته‌شده با هدف', workTitle: 'پروژه‌های منتخب', workIntro: 'ابزارها و آزمایش‌هایی برای کاربردی‌ترکردن پژوهش گفتار دیداری.',
-    extractorType: 'متن‌باز · پایتون', extractorDescription: 'ابزاری قابل تنظیم برای استخراج دقیق ناحیه‌ی لب از ویدئو با استفاده از MediaPipe Face Mesh.',
-    researchType: 'پژوهش · یادگیری عمیق', researchProject: 'بازشناسی گفتار دیداری', researchProjectDescription: 'بررسی نشانه‌های زمانی و دیداری در لب‌خوانی با معماری‌های یادگیری عمیق.', allProjects: 'همه‌ی مخازن گیت‌هاب',
+    researchBody: 'پژوهش من بررسی می‌کند مدل‌ها چگونه از حرکت لب‌ها گفتار را تشخیص دهند، حتی وقتی بعضی فریم‌ها مبهم یا تکراری‌اند. روی مدل‌های زمانی سبک، انتخاب پویای فریم‌ها و انتقال دانش کار می‌کنم تا دقت بالاتر برود، بی‌آنکه هزینهٔ اجرا افزایش پیدا کند.',
+    publicationsKicker: 'دستاوردهای پژوهشی', publicationsTitle: 'پیش‌چاپ‌ها و دست‌نوشته‌ها', publicationsIntro: 'دو مسیر پژوهشی فعلی، همراه با پیوند مستقیم به مقاله‌ها.', publicationOneStatus: 'پیش‌چاپ · در حال داوری در The Visual Computer', publicationOneDescription: 'در این روش، عدم‌قطعیت هر فریم برای هدایت انتقال دانش در مدل‌های سبک بازشناسی گفتار دیداری به کار می‌رود.', publicationTwoStatus: 'پیش‌چاپ arXiv · ۲۰۲۶', publicationTwoDescription: 'بررسی می‌کند که مدل باورِ آگاه از عدم‌قطعیت چگونه می‌تواند تصمیم‌گیری در بازی گو را با جست‌وجوی کمتر هدایت کند.', readPreprint: 'خواندن پیش‌چاپ',
+    workKicker: 'پژوهش و مهندسی', workTitle: 'نمونه‌کارهای منتخب', workIntro: 'ابزار پژوهشی متن‌باز، وب‌سایت‌های خدماتی و ابزارهای هوش مصنوعی.',
+    extractorType: 'متن‌باز · پایتون', extractorDescription: 'بسته‌ای متن‌باز برای استخراج برش‌های پایدار از ناحیهٔ لب در ویدئو؛ همراه با هموارسازی زمانی، بهبود اختیاری نور و پردازش با CPU یا CUDA.',
+    engineeringType: 'وب · هوش مصنوعی کاربردی', engineeringTitle: 'وب‌سایت‌ها و ابزارهای هوش مصنوعی', engineeringDescription: 'برای کسب‌وکارهای خدماتی و فروشگاهی وب‌سایت می‌سازم. همچنین ابزار OCR متصل به API نوشته‌ام و در حال توسعهٔ یک چت‌بات هستم.', parsehgashtLink: 'وب‌سایت پارسه‌گشت ↗', shofazhyaghoubiLink: 'وب‌سایت خدمات و فروش ↗', allProjects: 'همهٔ مخازن گیت‌هاب',
     aboutKicker: 'کمی درباره‌ی من', aboutTitle: 'کنجکاوی، همراه<br />با نگاه فنی.',
-    aboutBody: 'من پژوهشگر و توسعه‌دهنده‌ی هوش مصنوعی هستم و به نقطه‌ی تلاقی ادراک و زبان علاقه دارم. کارم بینایی ماشین، یادگیری ماشین و ساخت ابزارهای کاربردی را کنار هم می‌گذارد تا پرسش‌های پژوهشی به راهکارهای قابل استفاده تبدیل شوند.',
-    aboutNote: 'تمرکز فعلی: بازشناسی گفتار دیداری و لب‌خوانی.', skillVision: 'بینایی ماشین', skillMachineLearning: 'یادگیری ماشین', contactKicker: 'ایده یا پرسشی دارید؟', contactTitle: 'بیایید چیزی<br />معنادار بسازیم.', emailMe: 'ایمیل بزنید', footerText: 'پژوهش درباره‌ی دیدن گفتار توسط ماشین.'
+    aboutBody: 'پژوهشگر دانشکدهٔ هوش مصنوعی دانشگاه آزاد اسلامی واحد کرج هستم و کارشناسی علوم کامپیوتر با گرایش مهندسی نرم‌افزار دارم. در کنار پژوهش، ساختار داده و برنامه‌نویسی تدریس کرده‌ام و سابقهٔ آموزش رباتیک و برنامه‌نویسی C# با Unity را هم دارم.',
+    aboutNote: 'موضوع پایان‌نامهٔ کارشناسی ارشد: بهبود دقت لب‌خوانی با شبکه‌های عمیق.', skillVision: 'بینایی ماشین', skillMachineLearning: 'یادگیری ماشین', contactKicker: 'برای همکاری پژوهشی یا پروژه‌ای', contactTitle: 'بیایید چیزی<br />معنادار بسازیم.', emailMe: 'ایمیل بزنید', footerText: 'پژوهش دربارهٔ تشخیص گفتار از تصویر.'
   }
 };
 
@@ -26,7 +28,7 @@ languageButton.addEventListener('click', () => {
   const isPersian = document.documentElement.lang === 'fa';
   document.documentElement.lang = isPersian ? 'en' : 'fa';
   document.documentElement.dir = isPersian ? 'ltr' : 'rtl';
-  document.title = isPersian ? 'Mehrad Yaghoubi — AI Researcher in Visual Speech Recognition' : 'مهراد یعقوبی — پژوهشگر هوش مصنوعی و بازشناسی گفتار دیداری';
+  document.title = isPersian ? 'Mehrad Yaghoubi — Graduate Researcher in AI & Visual Speech Recognition' : 'مهراد یعقوبی — پژوهشگر و دانشجوی کارشناسی ارشد هوش مصنوعی';
   languageButton.textContent = isPersian ? 'فا' : 'EN';
   languageButton.setAttribute('aria-label', isPersian ? 'Switch to Persian' : 'تغییر زبان به انگلیسی');
   menuButton.setAttribute('aria-label', isPersian ? 'Open menu' : 'باز کردن منو');
@@ -37,7 +39,7 @@ languageButton.addEventListener('click', () => {
   });
   document.querySelectorAll('.research-tags span').forEach((element, index) => {
     if (!element.dataset.english) element.dataset.english = element.textContent;
-    element.textContent = isPersian ? element.dataset.english : ['بازشناسی گفتار دیداری', 'لب‌خوانی', 'بینایی ماشین', 'یادگیری عمیق'][index];
+    element.textContent = isPersian ? element.dataset.english : ['بازشناسی گفتار دیداری', 'یادگیری عمیق کارآمد', 'انتقال دانش', 'مدل‌سازی زمانی'][index];
   });
   document.querySelectorAll('.project-footer span').forEach((element) => {
     if (!element.dataset.english) element.dataset.english = element.textContent;
