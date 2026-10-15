@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080a14" />
+    <meta name="description" content="Mehrad Yaghoubi is an AI researcher focused on visual speech recognition, lip-reading, and computer vision." />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mehrad Yaghoubi — AI Researcher" />
+    <meta property="og:description" content="Research and engineering at the intersection of visual speech recognition and computer vision." />
+    <meta property="og:url" content="https://mehradyaghoubi.github.io/" />
+    <link rel="canonical" href="https://mehradyaghoubi.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Mehrad Yaghoubi — AI Researcher in Visual Speech Recognition</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mehrad Yaghoubi",
+        "alternateName": "مهراد یعقوبی",
+        "url": "https://mehradyaghoubi.github.io/",
+        "sameAs": [
+          "https://github.com/MehradYaghoubi",
+          "https://www.linkedin.com/in/mehrad-yaghoubi"
+        ],
+        "jobTitle": "AI Researcher",
+        "knowsAbout": ["Visual Speech Recognition", "Lip-reading", "Computer Vision", "Machine Learning"]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+      <header class="topbar">
+        <a class="wordmark" href="#home" aria-label="Mehrad Yaghoubi home"><span class="wordmark-mark">M<span>.</span></span></a>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="#research" data-i18n="navResearch">Research</a>
+          <a href="#work" data-i18n="navWork">Selected work</a>
+          <a href="#about" data-i18n="navAbout">About</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch to Persian">فا</button>
+          <a class="nav-contact" href="mailto:mehradyaghoubi96@gmail.com" data-i18n="navContact">Let’s talk</a>
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"><span></span><span></span></button>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="hero-kicker"><span class="status-dot"></span><span data-i18n="kicker">AI researcher · visual speech recognition</span></p>
+            <h1 id="hero-title" data-i18n="heroTitle">Making speech<br />visible.</h1>
+            <p class="hero-intro" data-i18n="heroIntro">I’m Mehrad Yaghoubi. I work at the intersection of computer vision and machine learning, exploring how machines can understand speech through visual cues.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work"><span data-i18n="exploreWork">Explore my work</span><span class="button-arrow" aria-hidden="true">↘</span></a>
+              <a class="text-link" href="mailto:mehradyaghoubi96@gmail.com" data-i18n="contactLink">Get in touch</a>
+            </div>
+            <div class="hero-meta"><span data-i18n="heroMeta">Based in Iran · Open to research collaborations</span></div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <canvas id="voice-canvas"></canvas>
+            <div class="visual-label visual-label-top"><span>PHONEME  /  01</span><span>30°  12′  04″</span></div>
+            <div class="visual-caption"><span class="caption-rule"></span><span data-i18n="visualCaption">A visual trace of spoken language</span></div>
+            <div class="visual-axis visual-axis-x"></div><div class="visual-axis visual-axis-y"></div>
+            <div class="visual-coordinate">VSR<br />35.7° N<br />51.4° E</div>
+          </div>
+          <a class="scroll-cue" href="#research"><span data-i18n="scroll">Scroll to explore</span><span class="scroll-line"></span></a>
+        </section>
+
+        <section class="research-section section-pad" id="research" aria-labelledby="research-title">
+          <div class="section-heading">
+            <p class="section-kicker" data-i18n="researchKicker">The question I’m asking</p>
+            <h2 id="research-title" data-i18n="researchTitle">What can a face tell us<br class="desktop-break" /> about a voice?</h2>
+          </div>
+          <div class="research-body">
+            <p data-i18n="researchBody">Visual speech recognition uses facial movement—especially the lips—to infer spoken words. My research explores deep learning approaches for lip-reading, where subtle motion, timing, and context all matter.</p>
+            <div class="research-tags" aria-label="Research interests"><span>Visual speech recognition</span><span>Lip-reading</span><span>Computer vision</span><span>Deep learning</span></div>
+          </div>
+          <div class="research-ornament" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="orbit-core"></span><span class="orbit-mark">/VSR</span></div>
+        </section>
+
+        <section class="work-section section-pad" id="work" aria-labelledby="work-title">
+          <div class="work-heading">
+            <div><p class="section-kicker" data-i18n="workKicker">Built with intent</p><h2 id="work-title" data-i18n="workTitle">Selected work</h2></div>
+            <p data-i18n="workIntro">Tools and experiments for making visual speech research more practical.</p>
+          </div>
+          <div class="project-grid">
+            <a class="project-card project-featured" href="https://github.com/MehradYaghoubi/pylipextractor" target="_blank" rel="noreferrer">
+              <div class="project-art art-extractor" aria-hidden="true"><div class="art-frame"><div class="art-face"><span class="face-eye eye-left"></span><span class="face-eye eye-right"></span><span class="face-nose"></span><span class="face-mouth"><i></i></span></div><div class="scan-line"></div><span class="art-coord">LANDMARKS / 468</span><span class="art-cross cross-a">+</span><span class="art-cross cross-b">+</span></div></div>
+              <div class="project-info"><div><p class="project-type" data-i18n="extractorType">Open-source · Python</p><h3>PyLipExtractor</h3><p class="project-description" data-i18n="extractorDescription">A configurable tool for accurate lip-region extraction from video using MediaPipe Face Mesh.</p></div><span class="project-link" aria-hidden="true">↗</span></div>
+              <div class="project-footer"><span>MediaPipe</span><span>Computer vision</span><span>Video processing</span></div>
+            </a>
+            <a class="project-card project-research" href="https://github.com/MehradYaghoubi?tab=repositories" target="_blank" rel="noreferrer">
+              <div class="project-art art-research" aria-hidden="true"><div class="signal signal-a"></div><div class="signal signal-b"></div><div class="signal signal-c"></div><div class="signal-dot"></div><span class="signal-label">VISUAL SPEECH / 24 FPS</span></div>
+              <div class="project-info"><div><p class="project-type" data-i18n="researchType">Research · Deep learning</p><h3 data-i18n="researchProject">Visual speech recognition</h3><p class="project-description" data-i18n="researchProjectDescription">Exploring temporal and visual cues for lip-reading with deep learning architectures.</p></div><span class="project-link" aria-hidden="true">↗</span></div>
+              <div class="project-footer"><span>VSR</span><span>Lip-reading</span><span>PyTorch</span></div>
+            </a>
+          </div>
+          <a class="all-projects" href="https://github.com/MehradYaghoubi?tab=repositories" target="_blank" rel="noreferrer"><span data-i18n="allProjects">See all repositories</span><span aria-hidden="true">↗</span></a>
+        </section>
+
+        <section class="about-section section-pad" id="about" aria-labelledby="about-title">
+          <div class="about-title"><p class="section-kicker" data-i18n="aboutKicker">A little about me</p><h2 id="about-title" data-i18n="aboutTitle">Curiosity, with<br />a technical edge.</h2></div>
+        <div class="about-copy"><p data-i18n="aboutBody">I’m an AI researcher and developer interested in the space where perception meets language. My work combines computer vision, machine learning, and practical software tools—turning research questions into things people can use.</p><p class="about-note" data-i18n="aboutNote">Currently focused on visual speech recognition and lip-reading.</p><div class="skill-list"><span>Python</span><span>PyTorch</span><span>OpenCV</span><span data-i18n="skillVision">Computer vision</span><span data-i18n="skillMachineLearning">Machine learning</span><span>C#</span></div></div>
+          <div class="about-stamp" aria-hidden="true"><span>MEHRAD<br />YAGHOUBI</span><span class="stamp-orbit">✳</span></div>
+        </section>
+
+        <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title"><div class="contact-orb" aria-hidden="true"></div><p class="section-kicker" data-i18n="contactKicker">Have a question or an idea?</p><h2 id="contact-title" data-i18n="contactTitle">Let’s make something<br />meaningful.</h2><a class="button button-light" href="mailto:mehradyaghoubi96@gmail.com"><span data-i18n="emailMe">Email me</span><span class="button-arrow" aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://github.com/MehradYaghoubi" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://www.linkedin.com/in/mehrad-yaghoubi" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div></section>
+      </main>
+
+      <footer class="site-footer"><a class="footer-name" href="#home">Mehrad Yaghoubi</a><span data-i18n="footerText">Researching how machines see speech.</span><span>© <span id="year"></span> Mehrad Yaghoubi</span></footer>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
