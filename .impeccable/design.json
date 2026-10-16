@@ -1,0 +1,137 @@
+{
+  "title": "Design System: Mehrad Yaghoubi",
+  "components": [
+    {
+      "name": "Primary action",
+      "html": "<a class=\"ds-primary\" href=\"#research\">Research</a>",
+      "kind": "button",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 17px;background:var(--deep,#153d59);color:#fff;border:1px solid var(--deep,#153d59);border-radius:5px;font:500 15px/1.65 \"IBM Plex Sans\",sans-serif;text-decoration:none}.ds-primary:hover{background:#24546f}.ds-primary:focus-visible{outline:3px solid #247bab;outline-offset:5px;border-radius:3px}",
+      "description": "Filled link for a prominent profile action.",
+      "refersTo": "button-primary"
+    },
+    {
+      "name": "Secondary action",
+      "html": "<a class=\"ds-secondary\" href=\"#contact\">Contact</a>",
+      "kind": "button",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 17px;color:var(--link,#175a82);border:1px solid #bdcfdb;border-radius:5px;font:500 15px/1.65 \"IBM Plex Sans\",sans-serif;text-decoration:none}.ds-secondary:hover{background:var(--tint,#edf4f8)}.ds-secondary:focus-visible{outline:3px solid #247bab;outline-offset:5px;border-radius:3px}",
+      "description": "Outlined link for a supporting profile action.",
+      "refersTo": "button-secondary"
+    },
+    {
+      "description": "Quiet vertical research navigation that becomes a scrollable row on mobile.",
+      "name": "Academic navigation",
+      "css": ".ds-nav{display:grid;gap:9px;font:400 15px/1.65 \"IBM Plex Sans\",sans-serif}.ds-nav a{color:var(--link,#175a82);padding:3px 0;min-height:30px;text-decoration:none;text-underline-offset:4px}.ds-nav a:hover{text-decoration:underline}.ds-nav a:focus-visible{outline:3px solid #247bab;outline-offset:5px;border-radius:3px}@media(max-width:760px){.ds-nav{display:flex;overflow-x:auto;gap:21px;font-size:13px}.ds-nav a{white-space:nowrap}}",
+      "kind": "nav",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Profile\"><a href=\"#research\">Research</a><a href=\"#projects\">Projects</a><a href=\"#contact\">Contact</a></nav>"
+    },
+    {
+      "name": "Opportunity notice",
+      "html": "<aside class=\"ds-notice\"><h2>PhD opportunities</h2><p>Computer vision, visual speech recognition and efficient deep learning.</p></aside>",
+      "kind": "card",
+      "css": ".ds-notice{background:var(--tint,#edf4f8);color:#1b2c3b;border:1px solid #c8dae5;border-radius:5px;padding:19px 21px;font:400 15px/1.65 \"IBM Plex Sans\",sans-serif}.ds-notice h2{font-size:17px;font-weight:600;line-height:1.25;margin:0 0 7px}.ds-notice p{margin:0}@media(max-width:760px){.ds-notice{padding:16px 18px}}",
+      "description": "Compact tinted reading inset with a factual opportunity statement.",
+      "refersTo": "opportunity"
+    },
+    {
+      "description": "Native summary reveals additional research explanation.",
+      "name": "Research disclosure",
+      "css": ".ds-details{font:400 14px/1.65 \"IBM Plex Sans\",sans-serif;margin-top:13px}.ds-details summary{cursor:pointer;color:var(--link,#175a82);width:fit-content;min-height:28px}.ds-details summary:hover{color:#102f45}.ds-details summary:focus-visible{outline:3px solid #247bab;outline-offset:5px;border-radius:3px}.ds-details p{margin:9px 0 0;color:var(--muted,#526575)}",
+      "kind": "custom",
+      "html": "<details class=\"ds-details\"><summary>Research summary</summary><p>Additional explanation of the research question, method and limitations.</p></details>"
+    }
+  ],
+  "schemaVersion": 2,
+  "narrative": {
+    "keyCharacteristics": [
+      "Quiet color and flat surfaces",
+      "Bibliographic titles and direct scholarly links",
+      "Compact research diagrams",
+      "Native interactions and printable public CVs"
+    ],
+    "overview": "A composed academic profile built around readable research evidence. Paper and mist surfaces, deep blue actions and a compact identity rail give readers a clear route from identity to manuscripts, software and contact. English and Persian share the same hierarchy and visual quality, with script-specific metrics and direction.",
+    "donts": [
+      "Do not reintroduce the rejected decorative 3D presentation.",
+      "Do not obscure manuscript status.",
+      "Do not publish private CV details."
+    ],
+    "dos": [
+      "Do preserve equivalent bilingual hierarchy.",
+      "Do preserve keyboard focus, native disclosures and print readability.",
+      "Do separate evidence through type, rules and spacing."
+    ],
+    "northStar": "The Research Reading Room",
+    "rules": [
+      {
+        "section": "colors",
+        "name": "The Evidence Rule",
+        "body": "Reserve emphasis for identity, research titles and actionable links; status remains readable text."
+      },
+      {
+        "section": "typography",
+        "name": "The Script Rule",
+        "body": "Preserve natural spacing and direction for each script and source-language bibliographic titles."
+      }
+    ]
+  },
+  "generatedAt": "2026-10-16T18:49:22.0902226Z",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Reading paper"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Secondary ink"
+      },
+      "link": {
+        "role": "primary",
+        "displayName": "Research link blue"
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Mist ground"
+      },
+      "deep": {
+        "role": "primary",
+        "displayName": "Deep scholarly blue"
+      }
+    },
+    "shadows": [],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "1050px"
+      },
+      {
+        "name": "mobile",
+        "value": "760px"
+      },
+      {
+        "name": "wide",
+        "value": "1450px"
+      }
+    ],
+    "motion": [
+      {
+        "purpose": "Native in-page navigation; becomes auto under prefers-reduced-motion: reduce.",
+        "name": "anchor-scroll",
+        "value": "smooth"
+      }
+    ],
+    "typographyMeta": {
+      "paper-title": {
+        "purpose": "Manuscript titles in their source language.",
+        "displayName": "Bibliographic title"
+      },
+      "display": {
+        "purpose": "Main English identity heading; mobile and Persian use script-specific overrides.",
+        "displayName": "English identity"
+      },
+      "body-fa": {
+        "purpose": "Persian reading text with natural script spacing and right-to-left direction.",
+        "displayName": "Persian prose"
+      }
+    }
+  }
+}

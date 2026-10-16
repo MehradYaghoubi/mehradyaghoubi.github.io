@@ -2,7 +2,14 @@
 
 Personal research and engineering portfolio: [mehradyaghoubi.github.io](https://mehradyaghoubi.github.io/).
 
-Mehrad Yaghoubi is an M.Sc. student in Artificial Intelligence at Islamic Azad University, Karaj, working on visual speech recognition, lip-reading, efficient deep learning, and knowledge distillation. The site presents his research, papers, selected software and web projects, and academic profiles in English and Persian.
+Mehrad Yaghoubi (مهراد یعقوبی) is completing his M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, and preparing for his thesis defense. He seeks PhD opportunities in computer vision, visual speech recognition (VSR), model optimization and efficient deep learning.
+
+## Read the profile
+
+- [English](https://mehradyaghoubi.github.io/) · [فارسی](https://mehradyaghoubi.github.io/fa/)
+- [Academic CV](https://mehradyaghoubi.github.io/cv/) · [رزومهٔ علمی](https://mehradyaghoubi.github.io/fa/cv/)
+
+Both languages share a layout and equivalent content. The public CV is printable HTML; the original private PDF is excluded from publication.
 
 ## Research and selected work
 
@@ -20,11 +27,11 @@ Mehrad Yaghoubi is an M.Sc. student in Artificial Intelligence at Islamic Azad U
 - [ResearchGate](https://www.researchgate.net/profile/Merhrad-Yaghoubi)
 - [LinkedIn](https://www.linkedin.com/in/mehrad-yaghoubi)
 
-For a concise, machine-readable research overview, see the site's [llms.txt](https://mehradyaghoubi.github.io/llms.txt). Search crawlers are allowed by [robots.txt](https://mehradyaghoubi.github.io/robots.txt), and the public pages are listed in the [XML sitemap](https://mehradyaghoubi.github.io/sitemap.xml).
+For a concise, machine-readable research overview, see the site's [`llms.txt`](https://mehradyaghoubi.github.io/llms.txt). Search crawlers are allowed by [`robots.txt`](https://mehradyaghoubi.github.io/robots.txt), and the public pages are listed in the [XML sitemap](https://mehradyaghoubi.github.io/sitemap.xml).
 
 ## Run locally
 
-Requires Node.js and npm.
+Requires Node.js 22.12+ and npm.
 
 ```sh
 npm ci
@@ -39,10 +46,20 @@ npm run build
 
 ## Deployment
 
-The main branch is deployed to GitHub Pages by [.github/workflows/deploy.yml](.github/workflows/deploy.yml). The published site is https://mehradyaghoubi.github.io/.
+The `main` branch is deployed to GitHub Pages by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). The published site is `https://mehradyaghoubi.github.io/`.
 
 ## Search indexing
 
-The site provides crawlable HTML content, a canonical URL, Person structured data, robots.txt, and an XML sitemap. These help search engines discover and understand the page but cannot guarantee indexing or a particular ranking.
+Each language has static HTML, its own canonical URL, reciprocal `hreflang` links and structured data. The site provides `robots.txt`, a four-page XML sitemap and an optional `llms.txt` overview. These help discovery but cannot guarantee indexing, ranking or inclusion in AI answers. No `unsafe-eval` or JavaScript string evaluation is required.
 
-To monitor Google indexing, verify the site as a property in [Google Search Console](https://search.google.com/search-console/), inspect https://mehradyaghoubi.github.io/, request indexing if available, and submit https://mehradyaghoubi.github.io/sitemap.xml. Requesting a crawl requires owner or full-user access to the verified property.
+The owner confirmed verification in [Google Search Console](https://search.google.com/search-console/); the meta tag is retained. Inspect the English and Persian URLs, request indexing if available, and submit `https://mehradyaghoubi.github.io/sitemap.xml`. This requires owner or full-user access. Verification of the site does not grant control over the separate `github.com` domain or ensure indexing of a GitHub profile.
+
+## Edit content and design
+
+- `src/content.js`: facts, manuscripts and equivalent English/Persian copy.
+- `scripts/generate-pages.mjs`: one static template, run before dev/build; checks locale fields, anchors, canonical URLs, language and verification-token presence.
+- `src/style.css`: shared responsive design with logical properties for RTL/LTR.
+- `src/main.js`: optional print button and section-preserving language links; content is readable without JavaScript.
+- `index.html`, `fa/index.html`, `cv/index.html`, `fa/cv/index.html` and `public/sitemap.xml`: generated; edit shared sources instead.
+- `public/fonts/`: self-hosted WOFF2 fonts and licenses; visitors need no third-party font request.
+- [Research and design sources](docs/research-and-design.md).

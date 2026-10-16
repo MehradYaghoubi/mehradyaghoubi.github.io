@@ -1,6 +1,6 @@
 # Mehrad Yaghoubi
 
-> Graduate researcher and M.Sc. student in Artificial Intelligence at the Faculty of Artificial Intelligence, Islamic Azad University, Karaj, Iran.
+> Mehrad Yaghoubi (مهراد یعقوبی) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, Iran, and preparing for his thesis defense. He seeks PhD opportunities in computer vision, visual speech recognition and model optimization.
 
 Mehrad Yaghoubi works on efficient deep learning, visual speech recognition (VSR), lip-reading, and knowledge distillation. His research explores lightweight temporal models, dynamic frame selection, and uncertainty-aware learning. He also builds practical computer vision and AI tools.
 
@@ -19,13 +19,16 @@ Mehrad Yaghoubi works on efficient deep learning, visual speech recognition (VSR
 
 ## Education and teaching
 
-- M.Sc. student in Artificial Intelligence, Islamic Azad University, Karaj.
+- M.Sc. in Artificial Intelligence, Islamic Azad University, Karaj: in progress, preparing for thesis defense.
 - B.Sc. in Computer Science (Software Engineering), Islamic Azad University, Karaj.
 - Teaching experience in data structures, programming, robotics, C#, and Unity.
 
 ## Profiles and contact
 
 - [Portfolio and research overview](https://mehradyaghoubi.github.io/)
+- [Persian research overview](https://mehradyaghoubi.github.io/fa/)
+- [Public academic CV](https://mehradyaghoubi.github.io/cv/)
+- [Persian academic CV](https://mehradyaghoubi.github.io/fa/cv/)
 - [GitHub](https://github.com/MehradYaghoubi)
 - [Google Scholar](https://scholar.google.com/citations?user=7X057KcAAAAJ)
 - [ResearchGate](https://www.researchgate.net/profile/Merhrad-Yaghoubi)
