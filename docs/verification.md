@@ -11,3 +11,6 @@
 
 These checks do not establish admission outcomes, funding, search-engine indexing, inclusion in AI answers, accessibility certification, or a professional translation review. No Search Console indexing request was submitted during these checks.
 
+## Job-profile alignment — 2026-10-18
+
+The public website and profile copy now describe the RAG chatbot as in development, API-based OCR as a built integration, and inference / serving as the target engineering focus. No vLLM, production-serving, multi-GPU, inference benchmark, or latency result is claimed without evidence.

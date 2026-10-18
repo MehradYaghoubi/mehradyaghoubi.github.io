@@ -2,7 +2,7 @@
 
 Personal research and engineering portfolio: [mehradyaghoubi.github.io](https://mehradyaghoubi.github.io/).
 
-Mehrad Yaghoubi (مهراد یعقوبی) is completing his M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, and preparing for his thesis defense. He seeks PhD opportunities in computer vision, visual speech recognition (VSR), model optimization and efficient deep learning.
+Mehrad Yaghoubi (مهراد یعقوبی) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, and preparing for his thesis defense. His work spans PyTorch computer vision, visual speech recognition (VSR), efficient models, API-based AI tools and a RAG chatbot in development. He is seeking machine-learning engineering opportunities in inference and applied AI.
 
 ## Read the profile
 
@@ -17,7 +17,7 @@ Both languages share a layout and equivalent content. The public CV is printable
 - **Research papers:** [SSRN manuscript](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6831426) (listed on the author's CV as under peer review at *The Visual Computer*) and [arXiv preprint](https://arxiv.org/abs/2607.26946).
 - **PyLipExtractor:** [open-source Python package](https://github.com/MehradYaghoubi/pylipextractor) for extracting lip regions from video.
 - **Web projects:** [Parseh Gasht](https://parsegasht.com/) (custom WordPress theme) and [shofazhyaghoubi.ir](http://shofazhyaghoubi.ir/).
-- **AI tools:** an API-connected OCR project and a chatbot in development.
+- **AI tools:** an API-based OCR project and a retrieval-augmented (RAG) chatbot in development.
 
 ## Profiles
 

@@ -1,6 +1,6 @@
 # Mehrad Yaghoubi
 
-> Mehrad Yaghoubi (مهراد یعقوبی) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, Iran, and preparing for his thesis defense. He seeks PhD opportunities in computer vision, visual speech recognition and model optimization.
+> Mehrad Yaghoubi (مهراد یعقوبی) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, Iran, and preparing for his thesis defense. He works on PyTorch computer vision, visual speech recognition, efficient models and applied AI tools. He is developing an API-based OCR project and a RAG chatbot and is seeking machine-learning engineering opportunities in inference and applied AI.
 
 Mehrad Yaghoubi works on efficient deep learning, visual speech recognition (VSR), lip-reading, and knowledge distillation. His research explores lightweight temporal models, dynamic frame selection, and uncertainty-aware learning. He also builds practical computer vision and AI tools.
 
@@ -15,7 +15,7 @@ Mehrad Yaghoubi works on efficient deep learning, visual speech recognition (VSR
 - [Parseh Gasht](https://parsegasht.com/) — website built with a custom WordPress theme.
 - [Service and commerce website](http://shofazhyaghoubi.ir/) — website developed by Mehrad Yaghoubi.
 - OCR tool connected to an API — developed project.
-- Chatbot — in development.
+- Retrieval-augmented (RAG) chatbot — in development.
 
 ## Education and teaching
 
