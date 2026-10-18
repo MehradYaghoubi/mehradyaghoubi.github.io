@@ -1,6 +1,6 @@
 # Mehrad Yaghoubi
 
-> Mehrad Yaghoubi (مهراد یعقوبی) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, Iran, and preparing for his thesis defense. He works on PyTorch computer vision, visual speech recognition, efficient models and applied AI tools. He is developing an API-based OCR project and a RAG chatbot and is seeking machine-learning engineering opportunities in inference and applied AI.
+> Mehrad Yaghoubi (مهراد یعقوبی; also written Merhrad Yaghoubi) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, Iran, and preparing for his thesis defense. Since August 2026, he has worked as an AI Specialist at Ghasedak Peik Shahr, building AI and web tools for travel services. His work includes a Persian travel-booking chatbot with WordPress integrations, a competitor price-checking bot, an operator training dashboard, and a homepage theme. He is seeking machine-learning engineering roles in inference, model efficiency, and applied computer vision.
 
 Mehrad Yaghoubi works on efficient deep learning, visual speech recognition (VSR), lip-reading, and knowledge distillation. His research explores lightweight temporal models, dynamic frame selection, and uncertainty-aware learning. He also builds practical computer vision and AI tools.
 
@@ -11,8 +11,9 @@ Mehrad Yaghoubi works on efficient deep learning, visual speech recognition (VSR
 
 ## Selected work
 
+- **AI Specialist, Ghasedak Peik Shahr (Aug 2026–present):** Developed a Persian travel chatbot and WordPress integrations for Parsegasht and TaxiRooz, a travel-market competitor price checker, and Parsegasht operator training and homepage tools.
 - [PyLipExtractor](https://github.com/MehradYaghoubi/pylipextractor) — open-source Python package for extracting lip regions from video with MediaPipe Face Mesh. Includes temporal smoothing, optional illumination normalization, configurable processing, and CPU/CUDA support.
-- [Parseh Gasht](https://parsegasht.com/) — website built with a custom WordPress theme.
+- [Parseh Gasht](https://parsegasht.com/) — website built with a custom WordPress homepage theme; operator training dashboard also developed.
 - [Service and commerce website](http://shofazhyaghoubi.ir/) — website developed by Mehrad Yaghoubi.
 - OCR tool connected to an API — developed project.
 - Retrieval-augmented (RAG) chatbot — in development.

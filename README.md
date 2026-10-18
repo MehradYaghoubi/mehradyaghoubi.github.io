@@ -2,7 +2,7 @@
 
 Personal research and engineering portfolio: [mehradyaghoubi.github.io](https://mehradyaghoubi.github.io/).
 
-Mehrad Yaghoubi (مهراد یعقوبی) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, and preparing for his thesis defense. His work spans PyTorch computer vision, visual speech recognition (VSR), efficient models, API-based AI tools and a RAG chatbot in development. He is seeking machine-learning engineering opportunities in inference and applied AI.
+Mehrad Yaghoubi (مهراد یعقوبی; also written Merhrad Yaghoubi) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, and preparing for his thesis defense. Since August 2026, he has worked as an AI Specialist at Ghasedak Peik Shahr, building a Persian travel-booking chatbot, WordPress integrations, a competitor price-checking bot, an operator training dashboard and a homepage theme. His research spans PyTorch computer vision, visual speech recognition (VSR), knowledge distillation and efficient models. He is seeking machine-learning engineering opportunities in inference and applied AI.
 
 ## Read the profile
 
@@ -13,10 +13,11 @@ Both languages share a layout and equivalent content. The public CV is printable
 
 ## Research and selected work
 
+- **AI Specialist, Ghasedak Peik Shahr (Aug 2026–present):** travel chatbot and WordPress integrations for Parsegasht and TaxiRooz; competitor price checker; Parsegasht operator training dashboard and homepage theme.
 - **Visual speech recognition:** research on efficient lip-reading models and uncertainty-guided learning.
 - **Research papers:** [SSRN manuscript](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6831426) (listed on the author's CV as under peer review at *The Visual Computer*) and [arXiv preprint](https://arxiv.org/abs/2607.26946).
 - **PyLipExtractor:** [open-source Python package](https://github.com/MehradYaghoubi/pylipextractor) for extracting lip regions from video.
-- **Web projects:** [Parseh Gasht](https://parsegasht.com/) (custom WordPress theme) and [shofazhyaghoubi.ir](http://shofazhyaghoubi.ir/).
+- **Web projects:** [Parseh Gasht](https://parsegasht.com/) (custom homepage theme and operator training dashboard) and [shofazhyaghoubi.ir](http://shofazhyaghoubi.ir/).
 - **AI tools:** an API-based OCR project and a retrieval-augmented (RAG) chatbot in development.
 
 ## Profiles
