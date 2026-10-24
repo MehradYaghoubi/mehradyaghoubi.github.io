@@ -2,7 +2,7 @@
 
 Personal research and engineering portfolio: [mehradyaghoubi.github.io](https://mehradyaghoubi.github.io/).
 
-Mehrad Yaghoubi (مهراد یعقوبی; also written Merhrad Yaghoubi) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, and preparing for his thesis defense. Since August 2026, he has worked as an AI Specialist at Ghasedak Peik Shahr, building a Persian travel-booking chatbot, WordPress integrations, a competitor price-checking bot, an operator training dashboard and a homepage theme. His research spans PyTorch computer vision, visual speech recognition (VSR), knowledge distillation and efficient models. He is seeking machine-learning engineering opportunities in inference and applied AI.
+Mehrad Yaghoubi (مهراد یعقوبی; also written Merhrad Yaghoubi) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, and preparing for his thesis defense. Since August 2026, he has worked as an AI Specialist at Ghasedak Peik Shahr, building a Persian travel-booking chatbot, WordPress integrations, a competitor price-checking bot, an operator training dashboard and a homepage theme. His research spans PyTorch computer vision, visual speech recognition (VSR), knowledge distillation and efficient models. He is seeking fully funded PhD positions in computer vision, VSR, efficient machine learning and model optimization.
 
 ## Read the profile
 

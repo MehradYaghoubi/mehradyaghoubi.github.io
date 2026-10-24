@@ -46,7 +46,7 @@ export const content = {
   en: {
     lang: 'en', dir: 'ltr', name: site.name, otherName: site.nameFa,
     title: 'Mehrad Yaghoubi | Machine Learning, Computer Vision & Inference',
-    description: 'Mehrad Yaghoubi is an AI M.Sc. researcher and AI Specialist in Iran, working on PyTorch computer vision, travel chatbots, WordPress integrations, price comparison tools and RAG.',
+    description: 'Mehrad Yaghoubi is an AI M.Sc. researcher seeking fully funded PhD positions in computer vision, VSR and efficient machine learning, with experience in PyTorch and applied AI.',
     cvTitle: 'Mehrad Yaghoubi | Academic CV', cvDescription: 'Academic CV of Mehrad Yaghoubi, M.Sc. researcher in artificial intelligence focused on visual speech recognition, efficient deep learning and computer vision.',
     workCvTitle: 'Mehrad Yaghoubi | AI Engineer Resume', workCvDescription: 'AI engineering resume of Mehrad Yaghoubi, with applied AI tools, chatbot and WordPress integration work, OCR, Python and PyTorch computer vision research.',
     home: 'Academic profile', skip: 'Skip to content', navigation: 'On this page',
@@ -56,7 +56,7 @@ export const content = {
     intro: 'I build and study efficient machine-learning systems, from computer vision to retrieval-augmented applications.',
     bio: 'I’m completing my M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, and preparing for my thesis defense. My research focuses on visual speech recognition (VSR): learning to recognize speech from lip movements.',
     bioTwo: 'I work on efficient deep learning, knowledge distillation and uncertainty-aware learning. I also build AI tools and web integrations for travel services, while developing a personal retrieval-augmented chatbot.',
-    opportunity: 'Seeking machine-learning engineering roles', opportunityBody: 'I am looking for opportunities in model inference, efficiency and applied computer vision. I have built AI tools and web integrations for travel services and conduct PyTorch VSR research; my personal RAG chatbot is in development.',
+    opportunity: 'Seeking fully funded PhD positions', opportunityBody: 'I am seeking fully funded PhD opportunities in computer vision, visual speech recognition (VSR), and efficient machine learning, including model optimization. My work combines PyTorch research on VSR with hands-on experience building AI systems for real-world services.',
     researchTitle: 'Research interests', researchIntro: 'My current work brings together three connected questions.',
     research: [
       ['Visual speech recognition', 'How can a model recognize speech when lip movements are ambiguous or some video frames carry little information?'],
@@ -80,7 +80,7 @@ export const content = {
     education: 'Education', msc: 'M.Sc. in Artificial Intelligence', mscState: '2024–2026 (expected); preparing for thesis defense', mscGpa: 'GPA: 18.45/20', mscThesis: 'Thesis: improving lip-reading accuracy with deep neural networks.',
     bsc: 'B.Sc. in Computer Science (Software Engineering)', bscPeriod: '2017–2023', bscGpa: 'GPA: 14.68/20',
     skills: 'Technical skills', skillList: ['Python', 'PyTorch', 'FastAPI', 'REST APIs', 'OpenCV', 'MediaPipe', 'WordPress', 'Git', 'Linux'],
-    contact: 'Let’s talk machine learning', contactBody: 'For machine-learning roles or collaborations in computer vision, VSR, model efficiency or retrieval-augmented applications, email me with a short introduction to the work.',
+    contact: 'Let’s talk about research opportunities', contactBody: 'For fully funded PhD opportunities or research collaborations in computer vision, visual speech recognition, efficient machine learning or model optimization, please email me with a short introduction to your work.',
     updated: 'Updated October 2026', footer: 'Mehrad Yaghoubi · مهراد یعقوبی',
     cvHeading: 'Academic CV', workCvHeading: 'AI Engineering Resume', back: 'Back to profile', print: 'Print / save as PDF', downloadPdf: 'Download PDF', downloadWord: 'Download Word',
     cvIntro: 'M.Sc. researcher in Artificial Intelligence focused on visual speech recognition, efficient deep learning and computer vision. Preparing for thesis defense, with an interest in applied AI research for real-world operational problems such as logistics.',
@@ -91,7 +91,7 @@ export const content = {
   fa: {
     lang: 'fa', dir: 'rtl', name: site.nameFa, otherName: site.name,
     title: 'مهراد یعقوبی | یادگیری ماشین، بینایی ماشین و استنتاج',
-    description: 'مهراد یعقوبی (Mehrad Yaghoubi)، پژوهشگر ارشد هوش مصنوعی و متخصص هوش مصنوعی در ایران؛ بینایی ماشین با PyTorch، چت‌بات سفر، افزونه وردپرس، ابزار مقایسهٔ قیمت و RAG.',
+    description: 'مهراد یعقوبی (Mehrad Yaghoubi)، پژوهشگر ارشد هوش مصنوعی و جویای موقعیت دکتری با فاند کامل در بینایی ماشین، VSR و یادگیری ماشین کارآمد؛ با تجربهٔ PyTorch و هوش مصنوعی کاربردی.',
     cvTitle: 'مهراد یعقوبی | رزومهٔ علمی هوش مصنوعی', cvDescription: 'رزومهٔ علمی مهراد یعقوبی، پژوهشگر کارشناسی ارشد هوش مصنوعی با تمرکز بر بازشناسی گفتار دیداری، یادگیری عمیق کارآمد و بینایی ماشین.',
     workCvTitle: 'مهراد یعقوبی | رزومهٔ کاری مهندسی هوش مصنوعی', workCvDescription: 'رزومهٔ کاری مهراد یعقوبی با سوابق توسعهٔ ابزارهای هوش مصنوعی، چت‌بات و اتصال‌های وردپرس، OCR و پژوهش بینایی ماشین با پایتون و PyTorch.',
     home: 'صفحهٔ علمی', skip: 'رفتن به محتوای اصلی', navigation: 'بخش‌های صفحه',
@@ -101,7 +101,7 @@ export const content = {
     intro: 'سامانه‌های یادگیری ماشین را می‌سازم و بررسی می‌کنم؛ از بینایی ماشین تا برنامه‌های مبتنی بر بازیابی اطلاعات (RAG).',
     bio: 'دانشجوی کارشناسی ارشد هوش مصنوعی در دانشگاه آزاد اسلامی واحد کرج هستم و برای دفاع از پایان‌نامه‌ام آماده می‌شوم. تمرکز پژوهشی من بازشناسی گفتار دیداری (VSR) است: تشخیص گفتار از روی حرکت لب‌ها.',
     bioTwo: 'روی یادگیری عمیق کارآمد، انتقال دانش و یادگیری آگاه از عدم‌قطعیت کار می‌کنم. همچنین ابزارهای هوش مصنوعی و اتصال‌های وب برای خدمات گردشگری می‌سازم و در حال توسعهٔ چت‌بات RAG شخصی‌ام هستم.',
-    opportunity: 'جویای فرصت‌های مهندسی یادگیری ماشین', opportunityBody: 'به‌دنبال فرصت‌هایی در استنتاج مدل، کارایی و بینایی ماشین کاربردی هستم. ابزارهای هوش مصنوعی و اتصال‌های وب برای خدمات گردشگری ساخته‌ام و در کنار آن روی پژوهش VSR با PyTorch کار می‌کنم؛ چت‌بات RAG شخصی‌ام در حال توسعه است.',
+    opportunity: 'جویای موقعیت دکتری با فاند کامل', opportunityBody: 'به‌دنبال موقعیت دکتری با فاند کامل در بینایی ماشین، بازشناسی گفتار دیداری (VSR) و یادگیری ماشین کارآمد، از جمله بهینه‌سازی مدل‌ها، هستم. تجربهٔ پژوهش VSR با PyTorch را با ساخت سامانه‌های هوش مصنوعی کاربردی ترکیب می‌کنم.',
     researchTitle: 'علاقه‌مندی‌های پژوهشی', researchIntro: 'پژوهش فعلی من سه پرسش مرتبط را دنبال می‌کند.',
     research: [
       ['بازشناسی گفتار دیداری', 'مدل چگونه می‌تواند گفتار را تشخیص دهد، وقتی حرکت‌های لب مبهم‌اند یا بعضی فریم‌های ویدئو اطلاعات کمی دارند؟'],
@@ -125,7 +125,7 @@ export const content = {
     education: 'تحصیلات', msc: 'کارشناسی ارشد هوش مصنوعی', mscState: '۱۴۰۳–۱۴۰۵ (پیش‌بینی‌شده)؛ آمادهٔ دفاع از پایان‌نامه', mscGpa: 'معدل: ۱۸٫۴۵ از ۲۰', mscThesis: 'موضوع پایان‌نامه: بهبود دقت لب‌خوانی با شبکه‌های عصبی عمیق.',
     bsc: 'کارشناسی علوم کامپیوتر (مهندسی نرم‌افزار)', bscPeriod: '۱۳۹۶–۱۴۰۲', bscGpa: 'معدل: ۱۴٫۶۸ از ۲۰',
     skills: 'مهارت‌های فنی', skillList: ['Python', 'PyTorch', 'FastAPI', 'REST APIs', 'OpenCV', 'MediaPipe', 'WordPress', 'Git', 'Linux'],
-    contact: 'دربارهٔ یادگیری ماشین گفت‌وگو کنیم', contactBody: 'برای فرصت‌های مهندسی یادگیری ماشین یا همکاری در بینایی ماشین، بازشناسی گفتار دیداری، کارایی مدل یا برنامه‌های بازیابی‌افزوده، همراه با معرفی کوتاهی از کار ایمیل بزنید.',
+    contact: 'دربارهٔ فرصت‌های پژوهشی گفت‌وگو کنیم', contactBody: 'برای موقعیت دکتری با فاند کامل یا همکاری پژوهشی در بینایی ماشین، بازشناسی گفتار دیداری، یادگیری ماشین کارآمد و بهینه‌سازی مدل‌ها، همراه با معرفی کوتاهی از کارتان ایمیل بزنید.',
     updated: 'به‌روزرسانی: اکتبر ۲۰۲۶', footer: 'مهراد یعقوبی · Mehrad Yaghoubi',
     cvHeading: 'رزومهٔ علمی', workCvHeading: 'رزومهٔ کاری مهندسی هوش مصنوعی', back: 'بازگشت به صفحهٔ اصلی', print: 'چاپ / ذخیره به‌صورت PDF', downloadPdf: 'دریافت PDF', downloadWord: 'دریافت Word',
     cvIntro: 'پژوهشگر کارشناسی ارشد هوش مصنوعی با تمرکز بر بازشناسی گفتار دیداری، یادگیری عمیق کارآمد و بینایی ماشین. در آستانهٔ دفاع از پایان‌نامه و علاقه‌مند به پژوهش کاربردی هوش مصنوعی برای مسائل عملیاتی واقعی، از جمله لجستیک.',
