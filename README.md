@@ -2,7 +2,7 @@
 
 Personal research and engineering portfolio: [mehradyaghoubi.github.io](https://mehradyaghoubi.github.io/).
 
-Mehrad Yaghoubi (مهراد یعقوبی; also written Merhrad Yaghoubi) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, and preparing for his thesis defense. Since August 2026, he has worked as an AI Specialist at Ghasedak Peik Shahr, building a Persian travel-booking chatbot, WordPress integrations, a competitor price-checking bot, an operator training dashboard and a homepage theme. His research spans PyTorch computer vision, visual speech recognition (VSR), knowledge distillation and efficient models. He is seeking fully funded PhD positions in computer vision, VSR, efficient machine learning and model optimization.
+Mehrad Yaghoubi (مهراد یعقوبی; also written Merhrad Yaghoubi) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, and preparing for his thesis defense. Since August 2026, he has worked as an AI Specialist at Ghasedak Peik Shahr, building a Persian travel-booking chatbot, WordPress integrations, a competitor price-checking bot, an operator training dashboard and a homepage theme. He was also a co-founder and the sole programmer in Fidar Technology Fartak, a 1.5-year university-level game-development venture that was not formally incorporated; the team explored psychology-informed games intended to help prevent crime. His research spans PyTorch computer vision, visual speech recognition (VSR), knowledge distillation and efficient models. He is seeking fully funded PhD positions in computer vision, VSR, efficient machine learning and model optimization.
 
 ## Read the profile
 

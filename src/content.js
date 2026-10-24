@@ -72,6 +72,7 @@ export const content = {
     built: 'Developed project', inProgress: 'In development', visit: 'Visit website',
     experience: 'Professional experience', experienceItems: [
       { role: 'AI Specialist', employer: 'Ghasedak Peik Shahr', period: '2026 · 2 months', summary: 'Built AI and web tools for travel services.', highlights: ['Developed a Persian-language travel booking chatbot with three WordPress plugins/integrations.', 'Built a bot to check competitor prices.', 'Created an operator training dashboard and a custom homepage theme for Parsegasht.'] },
+      { role: 'Co-founder and sole programmer', employer: 'Fidar Technology Fartak · university-level venture, not incorporated', period: '1.5 years', summary: 'One of three core team members and the only programmer, working on psychology-informed games intended to help prevent crime.', highlights: [] },
       { role: 'Research activity', employer: 'Research Center, Islamic Azad University, Karaj', period: '1.5 years', summary: 'Active in research activities at the university research center.', highlights: [] },
       { role: 'Software Instructor', employer: 'Faculty of Work and Skills, Islamic Azad University, Karaj', period: '1 year', summary: 'Taught software-related courses.', highlights: [] },
       { role: 'Programming Instructor', employer: 'Net College Institute', period: '1 year', summary: 'Taught programming.', highlights: [] },
@@ -117,6 +118,7 @@ export const content = {
     built: 'توسعه‌یافته', inProgress: 'در حال توسعه', visit: 'دیدن وب‌سایت',
     experience: 'سوابق حرفه‌ای و پژوهشی', experienceItems: [
       { role: 'متخصص هوش مصنوعی', employer: 'شرکت قاصدک پیک شهر', period: 'سال ۱۴۰۵ · دو ماه', summary: 'ساخت ابزارهای هوش مصنوعی و وب برای خدمات گردشگری.', highlights: ['توسعهٔ چت‌بات رزرو سفر فارسی با سه افزونه و اتصال وردپرس.', 'ساخت بات بررسی قیمت رقبا.', 'ساخت داشبورد آموزشی اپراتورها و قالب اختصاصی صفحهٔ اصلی پارسه‌گشت.'] },
+      { role: 'هم‌بنیان‌گذار و تنها برنامه‌نویس تیم', employer: 'فیدار تکنولوژی فرتاک · طرح دانشگاهی، بدون ثبت رسمی شرکت', period: 'یک‌ونیم سال', summary: 'یکی از سه عضو اصلی تیم بودم و مسئولیت برنامه‌نویسی را به‌تنهایی بر عهده داشتم؛ طرح بر توسعهٔ بازی‌های روان‌شناختی با هدف کمک به پیشگیری از وقوع جرم متمرکز بود.', highlights: [] },
       { role: 'فعالیت پژوهشی', employer: 'مرکز تحقیقات دانشگاه آزاد اسلامی واحد کرج', period: 'یک‌ونیم سال', summary: 'فعالیت در مرکز تحقیقات دانشگاه.', highlights: [] },
       { role: 'مدرس رشتهٔ نرم‌افزار', employer: 'دانشکدهٔ کار و مهارت دانشگاه آزاد اسلامی واحد کرج', period: 'یک سال', summary: 'تدریس در رشتهٔ نرم‌افزار.', highlights: [] },
       { role: 'مدرس برنامه‌نویسی', employer: 'آموزشگاه نت‌کالج', period: 'یک سال', summary: 'تدریس برنامه‌نویسی.', highlights: [] },
