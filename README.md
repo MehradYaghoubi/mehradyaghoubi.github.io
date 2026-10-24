@@ -9,7 +9,12 @@ Mehrad Yaghoubi (مهراد یعقوبی; also written Merhrad Yaghoubi) is comp
 - [English](https://mehradyaghoubi.github.io/) · [فارسی](https://mehradyaghoubi.github.io/fa/)
 - [Academic CV](https://mehradyaghoubi.github.io/cv/) · [رزومهٔ علمی](https://mehradyaghoubi.github.io/fa/cv/)
 
-Both languages share a layout and equivalent content. The public CV is printable HTML; the original private PDF is excluded from publication.
+The English and Persian profiles and CVs share a consistent layout and equivalent content. Both CVs are available as readable web pages, PDFs and Word documents:
+
+- [Academic CV (English)](https://mehradyaghoubi.github.io/cv/) · [PDF](https://mehradyaghoubi.github.io/resumes/Mehrad-Yaghoubi-Academic-CV.pdf) · [Word](https://mehradyaghoubi.github.io/resumes/Mehrad-Yaghoubi-Academic-CV.docx)
+- [رزومهٔ علمی (فارسی)](https://mehradyaghoubi.github.io/fa/cv/) · [PDF](https://mehradyaghoubi.github.io/resumes/Mehrad-Yaghoubi-Academic-CV.pdf)
+- [AI Engineering Resume (English)](https://mehradyaghoubi.github.io/work-cv/) · [PDF](https://mehradyaghoubi.github.io/resumes/Mehrad-Yaghoubi-AI-Engineering-Resume.pdf) · [Word](https://mehradyaghoubi.github.io/resumes/Mehrad-Yaghoubi-AI-Engineering-Resume.docx)
+- [رزومهٔ مهندسی هوش مصنوعی (فارسی)](https://mehradyaghoubi.github.io/fa/work-cv/) · [PDF](https://mehradyaghoubi.github.io/resumes/Mehrad-Yaghoubi-AI-Engineering-Resume.pdf)
 
 ## Research and selected work
 
