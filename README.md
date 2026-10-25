@@ -71,3 +71,20 @@ The owner confirmed verification in [Google Search Console](https://search.googl
 - `index.html`, `fa/index.html`, `cv/index.html`, `fa/cv/index.html`, `work-cv/index.html`, `fa/work-cv/index.html` and `public/sitemap.xml`: generated; edit shared sources instead.
 - `public/fonts/`: self-hosted IBM Plex Sans for English and Vazirmatn for Persian, with their licenses.
 - [Research and design sources](docs/research-and-design.md).
+
+## Rebuild downloadable resumes
+
+Resume content comes from `src/content.js` through structured entries in `scripts/generate-resume-data.mjs`. Roles, organizations and dates occupy separate lines. The Persian resume uses Vazirmatn with explicit RTL paragraphs and LTR runs for English terms, phone numbers and links.
+
+On Windows with Microsoft Word and Python packages `python-docx`, `pypdf` and `pypdfium2`, run:
+
+```sh
+node scripts/generate-resume-data.mjs
+python scripts/write-resumes.py
+powershell -File scripts/export-resumes.ps1
+python scripts/check-resumes.py
+```
+
+Use the Codex bundled runtimes when running these commands in Codex. The exporter registers the supplied Vazirmatn fonts for its session, embeds PDF fonts and updates the matching Word files. All three resumes use two pages with 11 pt English or 11.5 pt Persian body text. Do not shrink text to force a single page.
+
+The check covers content preservation, font embedding, links, RTL paragraph settings and text within page boundaries. Render and visually review every page after any layout change. `npm run build` rebuilds the website but does not regenerate resume files.

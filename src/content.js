@@ -2,6 +2,7 @@ export const site = {
   url: 'https://mehradyaghoubi.github.io', name: 'Mehrad Yaghoubi', nameFa: 'مهراد یعقوبی',
   email: 'mehradyaghoubi96@gmail.com', updated: '2026-10-25',
   phone: '+98 991 209 3038', phoneFa: '09912093038',
+  resumeRevision: 'readable-v2',
   verification: 'i7WKBB65tpHu5x1Twx67p9P1zgQZtljbYl3V0oTqAdM',
   profiles: [
     ['Google Scholar', 'https://scholar.google.com/citations?user=7X057KcAAAAJ'],
