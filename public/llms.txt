@@ -2,7 +2,7 @@
 
 Mehrad Yaghoubi (مهراد یعقوبی, also written Merhrad Yaghoubi) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, Iran, and preparing to defend his thesis. He is seeking a fully funded PhD position in computer vision, visual speech recognition (VSR), efficient deep learning or model optimization.
 
-His two research manuscripts study belief and uncertainty in VSR and decision making in Go. EGOSD uses an internal belief module to estimate frame-level uncertainty and control online self-distillation. His related interests include computer vision, knowledge distillation, efficient deep learning and model optimization. His work also includes lightweight temporal models and dynamic frame selection. He uses PyTorch and CUDA for GPU training and inference and develops applied AI tools and web integrations.
+His research examines uncertainty in VSR and decision making in Go. He uses PyTorch with CUDA for GPU model training and inference. His applied work includes chatbots and web integrations.
 
 ## Research papers
 
@@ -11,13 +11,12 @@ His two research manuscripts study belief and uncertainty in VSR and decision ma
 
 ## Selected work
 
-- AI Specialist at Ghasedak Peik Shahr for two months in 2026. Developed a Persian travel chatbot with three WordPress plugins, integrations for Parsegasht and TaxiRooz, a competitor price checker, and Parsegasht operator training and homepage tools.
+- AI Specialist at Ghasedak Peik Shahr for two months in 2026. Developed a Persian travel chatbot with three WordPress plugins, a competitor price checker, and an operator training dashboard and homepage theme for Parsegasht. [Website](https://parsegasht.com/).
 - Co-founder at Fidar Technology Fartak for 1.5 years. The university startup project explored games informed by psychology for crime prevention and was not formally incorporated.
 - [PyLipExtractor](https://github.com/MehradYaghoubi/pylipextractor). open-source Python package for extracting lip regions from video with MediaPipe Face Mesh. Includes temporal smoothing, optional illumination normalization, configurable processing, and CPU/CUDA support.
-- [Parseh Gasht](https://parsegasht.com/). website built with a custom WordPress homepage theme; operator training dashboard also developed.
-- [Service and commerce website](http://shofazhyaghoubi.ir/). website developed by Mehrad Yaghoubi.
-- OCR tool connected to an API. developed project.
-- Retrieval-augmented (RAG) chatbot. in development.
+- [Shofazh Yaghoubi](http://shofazhyaghoubi.ir/): a service and commerce website for a heating business.
+- OCR tool using an external API.
+- Personal retrieval-augmented generation (RAG) chatbot, in development.
 
 ## Education and teaching
 

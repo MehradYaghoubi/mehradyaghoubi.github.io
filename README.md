@@ -4,14 +4,14 @@ Personal research and engineering portfolio: [mehradyaghoubi.github.io](https://
 
 I am Mehrad Yaghoubi (مهراد یعقوبی, also written Merhrad Yaghoubi), an M.Sc. student in Artificial Intelligence at Islamic Azad University, Karaj. I am preparing to defend my thesis on lip reading with deep neural networks and looking for a fully funded PhD position in computer vision, VSR or model optimization.
 
-My two research manuscripts study belief and uncertainty in VSR and decision making in Go. EGOSD uses an internal belief module to estimate uncertainty and control online self-distillation. I use PyTorch and CUDA for GPU training and inference. My applied work includes a Persian travel chatbot, three WordPress plugins and price-checking automation. I was also a co-founder in Fidar Technology Fartak for 1.5 years. That university startup project explored games informed by psychology for crime prevention and was not formally incorporated.
+My research examines uncertainty in visual speech recognition and decision making in Go. Alongside research, I develop chatbots and web applications.
 
 ## Read the profile
 
 - [English](https://mehradyaghoubi.github.io/) · [فارسی](https://mehradyaghoubi.github.io/fa/)
 - [Academic CV](https://mehradyaghoubi.github.io/cv/) · [رزومه علمی](https://mehradyaghoubi.github.io/fa/cv/)
 
-The English and Persian profiles and CVs share a consistent layout and equivalent content. Both CVs are available as readable web pages, PDFs and Word documents:
+The profiles and web CVs are available in English and Persian. Downloadable files include an English academic CV and work resumes in both languages:
 
 - [Academic CV (English)](https://mehradyaghoubi.github.io/cv/) · [PDF](https://mehradyaghoubi.github.io/resumes/Mehrad-Yaghoubi-Academic-CV.pdf) · [Word](https://mehradyaghoubi.github.io/resumes/Mehrad-Yaghoubi-Academic-CV.docx)
 - [رزومه علمی (صفحه فارسی)](https://mehradyaghoubi.github.io/fa/cv/) · [PDF انگلیسی](https://mehradyaghoubi.github.io/resumes/Mehrad-Yaghoubi-Academic-CV.pdf)
@@ -25,6 +25,7 @@ The English and Persian profiles and CVs share a consistent layout and equivalen
 - [PyLipExtractor](https://github.com/MehradYaghoubi/pylipextractor), an open-source Python package for extracting lip regions from video.
 - Web development for [Parseh Gasht](https://parsegasht.com/) and [shofazhyaghoubi.ir](http://shofazhyaghoubi.ir/).
 - An API-based OCR tool and a personal RAG chatbot that is in development.
+- Co-founder of Fidar Technology Fartak for 1.5 years, a university startup project exploring games informed by psychology for crime prevention. The venture was not formally incorporated.
 
 ## Profiles
 
@@ -64,7 +65,7 @@ The owner confirmed verification in [Google Search Console](https://search.googl
 ## Edit content and design
 
 - `src/content.js`: facts, manuscripts and equivalent English/Persian copy.
-- `scripts/generate-pages.mjs`: one static template, run before dev/build; checks locale fields, anchors, canonical URLs, language and verification-token presence.
+- `scripts/generate-pages.mjs`: shared static templates, run before dev/build; checks locale fields, repeated skill terms, anchors, canonical URLs, language and verification-token presence. Academic CVs prioritize research software. Work CVs keep employer projects in professional experience.
 - `src/style.css`: shared responsive design with logical properties for RTL/LTR.
 - `src/main.js`: optional print button and section-preserving language links; content is readable without JavaScript.
 - `index.html`, `fa/index.html`, `cv/index.html`, `fa/cv/index.html`, `work-cv/index.html`, `fa/work-cv/index.html` and `public/sitemap.xml`: generated; edit shared sources instead.
