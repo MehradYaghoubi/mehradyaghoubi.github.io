@@ -67,7 +67,7 @@ The owner confirmed verification in [Google Search Console](https://search.googl
 - `src/content.js`: facts, manuscripts and equivalent English/Persian copy.
 - `scripts/generate-pages.mjs`: shared static templates, run before dev/build; checks locale fields, repeated skill terms, anchors, canonical URLs, language and verification-token presence. Academic CVs prioritize research software. Work CVs keep employer projects in professional experience.
 - `src/style.css`: shared responsive design with logical properties for RTL/LTR.
-- `src/main.js`: optional print button and section-preserving language links; content is readable without JavaScript.
+- `src/main.js`: section-preserving language links. Resume downloads use direct file links and work without JavaScript.
 - `index.html`, `fa/index.html`, `cv/index.html`, `fa/cv/index.html`, `work-cv/index.html`, `fa/work-cv/index.html` and `public/sitemap.xml`: generated; edit shared sources instead.
 - `public/fonts/`: self-hosted IBM Plex Sans for English and Vazirmatn for Persian, with their licenses.
 - [Research and design sources](docs/research-and-design.md).
