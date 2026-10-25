@@ -24,7 +24,7 @@ function education(c) {
   return `<div class="education-item"><h3>${c.msc}</h3><p>${c.institution} · ${c.mscState}</p><p>${c.mscGpa}</p><p>${c.mscThesis}</p></div><div class="education-item"><h3>${c.bsc}</h3><p>${c.institution} · ${c.bscPeriod}</p><p>${c.bscGpa}</p></div>`;
 }
 function experience(c) {
-  return c.experienceItems.map((item) => `<article class="education-item"><h3>${escape(item.role)}</h3><p>${escape(item.employer)} · ${escape(item.period)}</p><p>${escape(item.summary)}</p>${item.highlights.length ? `<ul>${item.highlights.map((highlight) => `<li>${escape(highlight)}</li>`).join('')}</ul>` : ''}</article>`).join('');
+  return c.experienceItems.map((item) => `<article class="education-item"><h3>${escape(item.role)}</h3><p>${escape(item.employer)} · ${escape(item.period)}</p>${item.summary ? `<p>${escape(item.summary)}</p>` : ''}${item.highlights.length ? `<ul>${item.highlights.map((highlight) => `<li>${escape(highlight)}</li>`).join('')}</ul>` : ''}</article>`).join('');
 }
 function software(c, cv) {
   return `<article class="featured-project"><h3>${link('https://github.com/MehradYaghoubi/pylipextractor', 'PyLipExtractor')}</h3><p>${c.extractor}</p><div class="text-links">${link('https://github.com/MehradYaghoubi/pylipextractor', c.source)}${link('https://pypi.org/project/pylipextractor/', c.package)}</div></article><div class="project-list">${[
@@ -43,12 +43,12 @@ function cvPage(c, type) {
   const work = type === 'work';
   const heading = work ? c.workCvHeading : c.cvHeading;
   const intro = work ? c.workCvIntro : c.cvIntro;
-  const summary = work ? `<section>${sectionHead(c.workFocus)}<p>${c.skillList.slice(0, 7).join(' · ')}</p></section>` : `<section>${sectionHead(c.focus)}<p>${c.research.map(([title]) => title).join(' · ')}</p></section>`;
+  const summary = work ? `<section>${sectionHead(c.skills)}<p dir="ltr">${c.skillList.join(' · ')}</p></section>` : `<section>${sectionHead(c.focus)}<p>${c.research.map(([title]) => title).join(' · ')}</p></section>`;
   const sections = work
-    ? `${summary}<section>${sectionHead(c.experience)}${experience(c)}</section><section>${sectionHead(c.projects)}${software(c, true)}</section><section>${sectionHead(c.education)}${education(c)}</section><section>${sectionHead(c.skills)}<p dir="ltr">${c.skillList.join(' · ')}</p></section>`
+    ? `${summary}<section>${sectionHead(c.experience)}${experience(c)}</section><section>${sectionHead(c.projects)}${software(c, true)}</section><section>${sectionHead(c.education)}${education(c)}</section>`
     : `${summary}<section>${sectionHead(c.education)}${education(c)}</section><section>${sectionHead(c.publications)}${paperList(c, true)}</section><section>${sectionHead(c.projects)}${software(c, true)}</section><section>${sectionHead(c.experience)}${experience(c)}</section><section>${sectionHead(c.skills)}<p dir="ltr">${c.skillList.join(' · ')}</p></section>`;
-  const filename = work ? 'Mehrad-Yaghoubi-AI-Engineering-Resume' : 'Mehrad-Yaghoubi-Academic-CV';
-  const downloads = `<a href="/resumes/${filename}.pdf">${c.downloadPdf}</a><a href="/resumes/${filename}.docx">${c.downloadWord}</a>`;
+  const filename = (work ? 'Mehrad-Yaghoubi-AI-Engineering-Resume' : 'Mehrad-Yaghoubi-Academic-CV') + (work && c.lang === 'fa' ? '-FA' : '');
+  const downloads = `<a href="/resumes/${filename}.pdf">${c.lang === 'fa' && !work ? 'PDF انگلیسی' : c.downloadPdf}</a><a href="/resumes/${filename}.docx">${c.lang === 'fa' && !work ? 'Word انگلیسی' : c.downloadWord}</a>`;
   return `<main id="main" class="cv-page"><nav class="cv-toolbar" aria-label="${c.navigation}">${link(route(c.lang), c.back)}<div>${link(route(c.lang, true, work ? 'academic' : 'work'), work ? c.cv : c.workCv)}${link(route(c.lang === 'en' ? 'fa' : 'en', true, type), c.language, 'data-language-link')}${downloads}<button class="print-button" hidden>${c.print}</button></div></nav><header class="cv-header"><h1>${c.name}</h1><p class="cv-kind">${heading}</p><p class="other-name" lang="${c.lang === 'en' ? 'fa' : 'en'}" dir="${c.lang === 'en' ? 'rtl' : 'ltr'}">${c.otherName}</p><p>${intro}</p><p>${c.location} · <bdi>${link(`mailto:${site.email}`, site.email)}</bdi></p><div class="profile-links">${profileLinks()}</div></header>${sections}<footer><p>${c.updated}</p>${link(route(c.lang), c.home)}</footer></main>`;
 }
 
@@ -75,6 +75,8 @@ function documentPage(c, cv, type = 'academic') {
 }
 
 assert.deepEqual(Object.keys(content.en).sort(), Object.keys(content.fa).sort(), 'Locale fields must match');
+const persianCopy = JSON.stringify([content.fa, ...papers.map((p) => [p.titleFa, p.status.fa, p.summary.fa, p.abstract.fa])]);
+assert(!/[\u064b-\u065f\u0670\u061b;]/u.test(persianCopy), 'Persian copy must not contain diacritics or semicolons');
 for (const c of Object.values(content)) {
   assert.equal(c.nav.length, ids.length);
   for (const [cv, type] of [[false, 'academic'], [true, 'academic'], [true, 'work']]) {
