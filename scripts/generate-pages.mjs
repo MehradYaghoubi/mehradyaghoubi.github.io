@@ -23,8 +23,8 @@ const sectionHead = (title, intro = '') => `<header class="section-heading"><h2>
 function education(c) {
   return `<div class="education-item"><h3>${c.msc}</h3><p>${c.institution} · ${c.mscState}</p><p>${c.mscGpa}</p><p>${c.mscThesis}</p></div><div class="education-item"><h3>${c.bsc}</h3><p>${c.institution} · ${c.bscPeriod}</p><p>${c.bscGpa}</p></div>`;
 }
-function experience(c) {
-  return c.experienceItems.map((item) => `<article class="education-item"><h3>${escape(item.role)}</h3><p>${escape(item.employer)} · ${escape(item.period)}</p>${item.summary ? `<p>${escape(item.summary)}</p>` : ''}${item.highlights.length ? `<ul>${item.highlights.map((highlight) => `<li>${escape(highlight)}</li>`).join('')}</ul>` : ''}</article>`).join('');
+function experience(c, items = c.experienceItems) {
+  return items.map((item) => `<article class="education-item"><h3>${escape(item.role)}</h3><p>${escape(item.employer)} · ${escape(item.period)}</p>${item.summary ? `<p>${escape(item.summary)}</p>` : ''}${item.highlights.length ? `<ul>${item.highlights.map((highlight) => `<li>${escape(highlight)}</li>`).join('')}</ul>` : ''}</article>`).join('');
 }
 function software(c, cv) {
   return `<article class="featured-project"><h3>${link('https://github.com/MehradYaghoubi/pylipextractor', 'PyLipExtractor')}</h3><p>${c.extractor}</p><div class="text-links">${link('https://github.com/MehradYaghoubi/pylipextractor', c.source)}${link('https://pypi.org/project/pylipextractor/', c.package)}</div></article><div class="project-list">${[
@@ -45,8 +45,8 @@ function cvPage(c, type) {
   const intro = work ? c.workCvIntro : c.cvIntro;
   const summary = work ? `<section>${sectionHead(c.skills)}<p dir="ltr">${c.skillList.join(' · ')}</p></section>` : `<section>${sectionHead(c.focus)}<p>${c.research.map(([title]) => title).join(' · ')}</p></section>`;
   const sections = work
-    ? `${summary}<section>${sectionHead(c.experience)}${experience(c)}</section><section>${sectionHead(c.projects)}${software(c, true)}</section><section>${sectionHead(c.education)}${education(c)}</section>`
-    : `${summary}<section>${sectionHead(c.education)}${education(c)}</section><section>${sectionHead(c.publications)}${paperList(c, true)}</section><section>${sectionHead(c.projects)}${software(c, true)}</section><section>${sectionHead(c.experience)}${experience(c)}</section><section>${sectionHead(c.skills)}<p dir="ltr">${c.skillList.join(' · ')}</p></section>`;
+    ? `<section>${sectionHead(c.experience)}${experience(c, c.experienceItems.slice(0, 2))}</section>${summary}<section>${sectionHead(c.projects)}${software(c, true)}</section><section>${sectionHead(c.education)}${education(c)}</section><section>${sectionHead(c.researchTeaching)}${experience(c, c.experienceItems.slice(2))}</section>`
+    : `<section>${sectionHead(c.publications)}${paperList(c, true)}</section>${summary}<section>${sectionHead(c.skills)}<p dir="ltr">${c.skillList.join(' · ')}</p></section><section>${sectionHead(c.education)}${education(c)}</section><section>${sectionHead(c.projects)}${software(c, true)}</section><section>${sectionHead(c.experience)}${experience(c)}</section>`;
   const filename = (work ? 'Mehrad-Yaghoubi-AI-Engineering-Resume' : 'Mehrad-Yaghoubi-Academic-CV') + (work && c.lang === 'fa' ? '-FA' : '');
   const downloads = `<a href="/resumes/${filename}.pdf">${c.lang === 'fa' && !work ? 'PDF انگلیسی' : c.downloadPdf}</a><a href="/resumes/${filename}.docx">${c.lang === 'fa' && !work ? 'Word انگلیسی' : c.downloadWord}</a>`;
   return `<main id="main" class="cv-page"><nav class="cv-toolbar" aria-label="${c.navigation}">${link(route(c.lang), c.back)}<div>${link(route(c.lang, true, work ? 'academic' : 'work'), work ? c.cv : c.workCv)}${link(route(c.lang === 'en' ? 'fa' : 'en', true, type), c.language, 'data-language-link')}${downloads}<button class="print-button" hidden>${c.print}</button></div></nav><header class="cv-header"><h1>${c.name}</h1><p class="cv-kind">${heading}</p><p class="other-name" lang="${c.lang === 'en' ? 'fa' : 'en'}" dir="${c.lang === 'en' ? 'rtl' : 'ltr'}">${c.otherName}</p><p>${intro}</p><p>${c.location} · <bdi>${link(`mailto:${site.email}`, site.email)}</bdi></p><div class="profile-links">${profileLinks()}</div></header>${sections}<footer><p>${c.updated}</p>${link(route(c.lang), c.home)}</footer></main>`;
@@ -63,7 +63,7 @@ function documentPage(c, cv, type = 'academic') {
     alternateName: [site.nameFa, 'مهراد يعقوبي', 'MehradYaghoubi', 'Merhrad Yaghoubi', 'M. Yaghoubi'], url: `${site.url}/`,
     email: `mailto:${site.email}`, sameAs: site.profiles.map(([, value]) => value),
     affiliation: { '@type': 'CollegeOrUniversity', name: 'Islamic Azad University, Karaj' },
-    knowsAbout: ['Computer vision', 'Visual speech recognition', 'Lip reading', 'Knowledge distillation', 'Efficient deep learning', 'Model optimization'],
+    knowsAbout: ['Computer vision', 'Visual speech recognition', 'Lip reading', 'Knowledge distillation', 'Efficient deep learning', 'Model optimization', 'Belief modules', 'Uncertainty-aware learning', 'Belief-guided decision making', 'PyTorch', 'CUDA'],
   };
   const schema = { '@context': 'https://schema.org', '@graph': [person, {
     '@type': 'ProfilePage', '@id': `${url}#webpage`, url, name: title, description,

@@ -4,7 +4,7 @@ Personal research and engineering portfolio: [mehradyaghoubi.github.io](https://
 
 I am Mehrad Yaghoubi (مهراد یعقوبی, also written Merhrad Yaghoubi), an M.Sc. student in Artificial Intelligence at Islamic Azad University, Karaj. I am preparing to defend my thesis on lip reading with deep neural networks and looking for a fully funded PhD position in computer vision, VSR or model optimization.
 
-My research focuses on knowledge distillation and learning with uncertainty in lightweight models. My applied work includes a Persian travel chatbot, WordPress plugins and price-checking automation. I was also a co-founder in Fidar Technology Fartak for 1.5 years. That university startup project explored games informed by psychology for crime prevention and was not formally incorporated.
+My two research manuscripts study belief and uncertainty in VSR and decision making in Go. EGOSD uses an internal belief module to estimate uncertainty and control online self-distillation. I use PyTorch and CUDA for GPU training and inference. My applied work includes a Persian travel chatbot, three WordPress plugins and price-checking automation. I was also a co-founder in Fidar Technology Fartak for 1.5 years. That university startup project explored games informed by psychology for crime prevention and was not formally incorporated.
 
 ## Read the profile
 

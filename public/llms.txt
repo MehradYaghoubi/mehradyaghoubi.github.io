@@ -2,7 +2,7 @@
 
 Mehrad Yaghoubi (مهراد یعقوبی, also written Merhrad Yaghoubi) is completing an M.Sc. in Artificial Intelligence at Islamic Azad University, Karaj, Iran, and preparing to defend his thesis. He is seeking a fully funded PhD position in computer vision, visual speech recognition (VSR), efficient deep learning or model optimization.
 
-His research focuses on VSR, lip reading, knowledge distillation and learning with uncertainty in lightweight models. His work also includes lightweight temporal models and dynamic frame selection. He develops applied AI tools and web integrations.
+His two research manuscripts study belief and uncertainty in VSR and decision making in Go. EGOSD uses an internal belief module to estimate frame-level uncertainty and control online self-distillation. His related interests include computer vision, knowledge distillation, efficient deep learning and model optimization. His work also includes lightweight temporal models and dynamic frame selection. He uses PyTorch and CUDA for GPU training and inference and develops applied AI tools and web integrations.
 
 ## Research papers
 
