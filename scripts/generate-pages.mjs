@@ -47,7 +47,7 @@ function cvPage(c, type) {
   const intro = work ? c.workCvIntro : c.cvIntro;
   const summary = work ? `<section>${sectionHead(c.skills)}<p dir="ltr">${c.skillList.join(' · ')}</p></section>` : '';
   const sections = work
-    ? `<section>${sectionHead(c.experience)}${experience(c, c.experienceItems.slice(0, 2))}</section>${summary}<section>${sectionHead(c.projects)}${software(c, type)}</section><section>${sectionHead(c.education)}${education(c)}</section><section>${sectionHead(c.researchTeaching)}${experience(c, c.experienceItems.slice(2))}</section>`
+    ? `<section>${sectionHead(c.experience)}${experience(c)}</section>${summary}<section>${sectionHead(c.projects)}${software(c, type)}</section><section>${sectionHead(c.education)}${education(c)}</section>`
     : `<section>${sectionHead(c.publications)}${paperList(c, true)}</section>${summary}<section>${sectionHead(c.skills)}<p dir="ltr">${c.researchSkillList.join(' · ')}</p></section><section>${sectionHead(c.education)}${education(c)}</section><section>${sectionHead(c.projects)}${software(c, type)}</section><section>${sectionHead(c.experience)}${experience(c)}</section>`;
   const filename = (work ? 'Mehrad-Yaghoubi-AI-Engineering-Resume' : 'Mehrad-Yaghoubi-Academic-CV') + (work && c.lang === 'fa' ? '-FA' : '');
   const downloads = `<a class="download-pdf" download href="/resumes/${filename}.pdf?v=${site.resumeRevision}">${c.lang === 'fa' && !work ? 'دانلود PDF انگلیسی' : c.downloadPdf}</a><a href="/resumes/${filename}.docx?v=${site.resumeRevision}">${c.lang === 'fa' && !work ? 'Word انگلیسی' : c.downloadWord}</a>`;

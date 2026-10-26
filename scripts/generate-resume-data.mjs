@@ -74,11 +74,9 @@ for (const c of [content.en, content.fa]) {
         paragraph(c.skillList.slice(0, 4).join(' · '), { latin: true }),
         paragraph(c.skillList.slice(4).join(' · '), { latin: true }),
       ]),
-      section(fa ? 'سوابق کاری' : 'Professional experience', experience(c.experienceItems.slice(0, 1))),
-      section(fa ? 'پروژه‌های منتخب' : 'Selected projects', workProjects(c)),
-      { ...section(fa ? 'پژوهش و تدریس' : 'Research and teaching', experience(c.experienceItems.slice(2), false)), pageBreakBefore: true },
+      section(fa ? 'سوابق حرفه‌ای' : 'Professional experience', experience(c.experienceItems)),
+      { ...section(fa ? 'پروژه‌های منتخب' : 'Selected projects', workProjects(c)), pageBreakBefore: true },
       section(c.education, education(c)),
-      section(fa ? 'تجربه کارآفرینی' : 'Entrepreneurial experience', experience(c.experienceItems.slice(1, 2))),
       section(fa ? 'زبان‌ها' : 'Languages', fa
         ? [paragraph('فارسی، زبان مادری'), paragraph('English · B1', { latin: true })]
         : [paragraph('Persian (native) · English (B1)')]),
@@ -94,6 +92,10 @@ for (const d of documents) {
     ...site.profiles.filter(([label]) => ['GitHub', 'LinkedIn', ...(d.filename.includes('Academic') ? ['Google Scholar', 'ORCID'] : [])].includes(label)),
   ];
   assert(d.sections.every((s) => s.entries.length), 'Empty resume section');
+  if (d.filename.includes('Engineering')) {
+    const roles = d.sections.find((s) => s.heading === (d.lang === 'fa' ? 'سوابق حرفه‌ای' : 'Professional experience')).entries;
+    assert.deepEqual(roles.map((e) => e.title), content[d.lang].experienceItems.map((e) => e.role), 'Incomplete professional experience');
+  }
   if (d.lang === 'fa') assert(!/[\u064b-\u065f\u0670\u061b;]/u.test(JSON.stringify(d)), 'Invalid Persian punctuation');
 }
 await mkdir('tmp/resumes', { recursive: true });
