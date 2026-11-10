@@ -53,7 +53,8 @@ const documents = [{
     section('Research software', [software(false)]),
     section('Technical skills', [
       paragraph(en.researchSkillList.slice(0, 5).join(' · '), { latin: true }),
-      paragraph(en.researchSkillList.slice(5).join(' · '), { latin: true }),
+      paragraph(en.researchSkillList.slice(5, 11).join(' · '), { latin: true }),
+      paragraph(en.researchSkillList.slice(11).join(' · '), { latin: true }),
     ]),
     section('Research and teaching', experience(en.experienceItems.slice(2), false)),
     section('Professional experience', [
@@ -72,7 +73,8 @@ for (const c of [content.en, content.fa]) {
       section(fa ? 'معرفی' : 'Profile', [paragraph(c.workCvIntro)]),
       section(c.skills, [
         paragraph(c.skillList.slice(0, 4).join(' · '), { latin: true }),
-        paragraph(c.skillList.slice(4).join(' · '), { latin: true }),
+        paragraph(c.skillList.slice(4, 9).join(' · '), { latin: true }),
+        paragraph(c.skillList.slice(9).join(' · '), { latin: true }),
       ]),
       section(fa ? 'سوابق حرفه‌ای' : 'Professional experience', experience(c.experienceItems)),
       { ...section(fa ? 'پروژه‌های منتخب' : 'Selected projects', workProjects(c)), pageBreakBefore: true },

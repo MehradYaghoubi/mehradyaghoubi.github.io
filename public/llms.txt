@@ -28,6 +28,10 @@ His research examines uncertainty in VSR and decision making in Go. He uses PyTo
 - Robotics instructor at Mohandesin Bartar Institute for one year.
 - Teaching experience in data structures, programming, robotics, C#, and Unity.
 
+## Technical skills
+
+Python · PyTorch (CUDA) · OpenCV · MediaPipe · FastAPI · REST APIs · WordPress · Git · Linux · Docker · SQL · MySQL · PostgreSQL
+
 ## Profiles and contact
 
 - [Portfolio and research overview](https://mehradyaghoubi.github.io/)

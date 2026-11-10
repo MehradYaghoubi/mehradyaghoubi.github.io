@@ -27,6 +27,10 @@ The profiles and web CVs are available in English and Persian. Downloadable file
 - An API-based OCR tool and a personal RAG chatbot that is in development.
 - Co-founder of Fidar Technology Fartak for 1.5 years, a university startup project exploring games informed by psychology for crime prevention. The venture was not formally incorporated.
 
+## Technical skills
+
+Python · PyTorch (CUDA) · OpenCV · MediaPipe · FastAPI · REST APIs · WordPress · Git · Linux · Docker · SQL · MySQL · PostgreSQL
+
 ## Profiles
 
 - [GitHub](https://github.com/MehradYaghoubi)
