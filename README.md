@@ -27,6 +27,11 @@ The profiles and web CVs are available in English and Persian. Downloadable file
 - An API-based OCR tool and a personal RAG chatbot that is in development.
 - Co-founder of Fidar Technology Fartak for 1.5 years, a university startup project exploring games informed by psychology for crime prevention. The venture was not formally incorporated.
 
+- [EGOSD source code](https://github.com/MehradYaghoubi/EGOSD): visual speech recognition research implementation.
+- [Research & Engineering Router](https://github.com/MehradYaghoubi/jev-research-engineering): an open-source agent skill I created to select relevant code and research evidence, with optional model-assisted routing and offline checks.
+
+- Open-source contributor to [XERJ Corpus Hub](https://hub.xerj.org/contributors/MehradYaghoubi).
+
 ## Technical skills
 
 Python · PyTorch (CUDA) · OpenCV · MediaPipe · FastAPI · REST APIs · WordPress · Git · Linux · Docker · SQL · MySQL · PostgreSQL

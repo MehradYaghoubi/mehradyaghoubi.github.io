@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import { site, content, papers } from '../src/content.js';
+import { site, content, papers, routerProject } from '../src/content.js';
 
 const section = (heading, entries) => ({ heading, entries });
 const paragraph = (text, extra = {}) => ({ text, ...extra });
@@ -20,6 +20,15 @@ const software = (fa) => ({
     : 'Open-source package for extracting lip regions from video, with temporal smoothing and optional illumination normalization.'],
   links: [['GitHub', 'https://github.com/MehradYaghoubi/pylipextractor'], ['PyPI', 'https://pypi.org/project/pylipextractor/']],
 });
+const router = (lang) => ({
+  title: routerProject.title, paragraphs: [routerProject.description[lang]],
+  links: [['GitHub', routerProject.url]],
+});
+const contribution = (lang) => ({
+  title: 'XERJ Corpus Hub',
+  paragraphs: [lang === 'fa' ? 'مشارکت‌کننده متن‌باز.' : 'Open-source contributor.'],
+  links: [[lang === 'fa' ? 'پروفایل مشارکت' : 'Contributor profile', routerProject.contributorUrl]],
+});
 const workProjects = (c) => {
   const fa = c.lang === 'fa';
   return [
@@ -28,9 +37,11 @@ const workProjects = (c) => {
       : 'Uncertainty-guided self-distillation for visual speech recognition. GPU model training and inference.'],
       status: fa ? 'در حال داوری در مجله' : 'Under review at The Visual Computer',
       statusLatin: fa ? 'The Visual Computer' : '',
-      links: [[fa ? 'پیش‌چاپ مقاله' : 'Preprint', papers[0].url]],
+      links: [[fa ? 'پیش‌چاپ مقاله' : 'Preprint', papers[0].url], ['GitHub', papers[0].code]],
     },
     software(fa),
+    router(c.lang),
+    contribution(c.lang),
     { title: fa ? 'شوفاژ یعقوبی' : 'Shofazh Yaghoubi', paragraphs: [c.shop],
       links: [[fa ? 'وب‌سایت' : 'Website', 'http://shofazhyaghoubi.ir/']] },
     { title: fa ? 'ابزار تشخیص متن' : 'OCR tool', paragraphs: [c.ocr] },
@@ -47,10 +58,10 @@ const documents = [{
     section('Selected research', papers.map((p) => ({
       title: p.title, meta: `${p.authors} · ${p.year}`,
       status: p.status.en, paragraphs: [p.summary.en],
-      links: [[p.doi ? 'DOI 10.2139/ssrn.6831426' : 'arXiv 2607.26946', p.doi || p.url]],
+      links: [[p.doi ? 'DOI 10.2139/ssrn.6831426' : 'arXiv 2607.26946', p.doi || p.url], ...(p.code ? [['GitHub', p.code]] : [])],
     }))),
     section('Education', education(en)),
-    section('Research software', [software(false)]),
+    section('Research software and open source', [software(false), router('en'), contribution('en')]),
     section('Technical skills', [
       paragraph(en.researchSkillList.slice(0, 5).join(' · '), { latin: true }),
       paragraph(en.researchSkillList.slice(5, 11).join(' · '), { latin: true }),
@@ -80,7 +91,7 @@ for (const c of [content.en, content.fa]) {
       { ...section(fa ? 'پروژه‌های منتخب' : 'Selected projects', workProjects(c)), pageBreakBefore: true },
       section(c.education, education(c)),
       section(fa ? 'زبان‌ها' : 'Languages', fa
-        ? [paragraph('فارسی، زبان مادری'), paragraph('English · B1', { latin: true })]
+        ? [paragraph('فارسی، زبان مادری · English (B1)')]
         : [paragraph('Persian (native) · English (B1)')]),
     ],
   });

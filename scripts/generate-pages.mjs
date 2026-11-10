@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import { site, papers, content } from '../src/content.js';
+import { site, papers, content, routerProject } from '../src/content.js';
 
 const escape = (value) => String(value).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const link = (url, label, extra = '') => `<a href="${escape(url)}" ${extra}>${escape(label)}</a>`;
@@ -16,7 +16,7 @@ function diagram(paper, c) {
 }
 
 function paperList(c, cv) {
-  return papers.map((p) => `<article class="paper ${cv ? 'cv-paper' : ''}">${cv ? '' : diagram(p, c)}<div class="paper-copy"><p class="paper-status">${p.year} · ${escape(p.status[c.lang])}</p><h3 lang="en" dir="ltr">${link(p.url, p.title)}</h3>${c.lang === 'fa' ? `<p class="translated-title">${p.titleFa}</p>` : ''}<p class="authors" lang="en" dir="ltr">${escape(p.authors).replace('Mehrad Yaghoubi', '<strong>Mehrad Yaghoubi</strong>')}</p><p>${escape(p.summary[c.lang])}</p><div class="text-links">${link(p.url, c.paper)}${p.doi ? link(p.doi, c.doi) : ''}</div>${cv ? '' : `<details><summary>${c.abstract}</summary><p>${escape(p.abstract[c.lang])}</p></details>`}</div></article>`).join('');
+  return papers.map((p) => `<article class="paper ${cv ? 'cv-paper' : ''}">${cv ? '' : diagram(p, c)}<div class="paper-copy"><p class="paper-status">${p.year} · ${escape(p.status[c.lang])}</p><h3 lang="en" dir="ltr">${link(p.url, p.title)}</h3>${c.lang === 'fa' ? `<p class="translated-title">${p.titleFa}</p>` : ''}<p class="authors" lang="en" dir="ltr">${escape(p.authors).replace('Mehrad Yaghoubi', '<strong>Mehrad Yaghoubi</strong>')}</p><p>${escape(p.summary[c.lang])}</p><div class="text-links">${link(p.url, c.paper)}${p.doi ? link(p.doi, c.doi) : ''}${p.code ? link(p.code, c.source) : ''}</div>${cv ? '' : `<details><summary>${c.abstract}</summary><p>${escape(p.abstract[c.lang])}</p></details>`}</div></article>`).join('');
 }
 
 const sectionHead = (title, intro = '') => `<header class="section-heading"><h2>${title}</h2>${intro ? `<p>${intro}</p>` : ''}</header>`;
@@ -28,9 +28,11 @@ function experience(c, items = c.experienceItems) {
 }
 function software(c, type = 'profile') {
   const extractor = `<article class="featured-project"><h3>${link('https://github.com/MehradYaghoubi/pylipextractor', 'PyLipExtractor')}</h3><p>${c.extractor}</p><div class="text-links">${link('https://github.com/MehradYaghoubi/pylipextractor', c.source)}${link('https://pypi.org/project/pylipextractor/', c.package)}</div></article>`;
-  if (type === 'academic') return extractor;
-  return extractor + `<div class="project-list">${[
-    ...(type === 'profile' ? [['Parseh Gasht', c.parseh, 'https://parsegasht.com/', c.visit]] : [['EGOSD', `${papers[0].summary[c.lang]} ${papers[0].status[c.lang]}.`, papers[0].url, c.paper]]),
+  const router = `<article class="featured-project"><h3>${link(routerProject.url, routerProject.title)}</h3><p>${escape(routerProject.description[c.lang])}</p><div class="text-links">${link(routerProject.url, c.source)}</div></article>`;
+  const contribution = `<article class="featured-project"><h3>XERJ Corpus Hub</h3><p>${c.lang === 'fa' ? 'مشارکت‌کننده متن‌باز.' : 'Open-source contributor.'}</p><div class="text-links">${link(routerProject.contributorUrl, c.lang === 'fa' ? 'پروفایل مشارکت' : 'Contributor profile')}</div></article>`;
+  if (type === 'academic') return extractor + router + contribution;
+  return extractor + router + contribution + `<div class="project-list">${[
+    ...(type === 'profile' ? [['Parseh Gasht', c.parseh, 'https://parsegasht.com/', c.visit]] : [['EGOSD', `${papers[0].summary[c.lang]} ${papers[0].status[c.lang]}.`, papers[0].code, c.source]]),
     [c.lang === 'fa' ? 'شوفاژ یعقوبی' : 'Shofazh Yaghoubi', c.shop, 'http://shofazhyaghoubi.ir/', c.visit],
     [c.ocrTitle, c.ocr, '', ''], [c.chatbotTitle, c.chatbot, '', c.inProgress],
   ].map(([name, description, url, action]) => `<article><h3>${escape(name)}</h3><p>${description}</p>${url ? link(url, action) : action ? `<p class="secondary project-state">${action}</p>` : ''}</article>`).join('')}</div>`;

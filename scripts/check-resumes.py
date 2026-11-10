@@ -68,6 +68,9 @@ for spec in specs:
     assert min(sizes) >= 9, 'Unreadably small text'
     assert 'mailto:' + spec['email'] in links and 'tel:+989912093038' in links
     assert all(url in links for _, url in spec['links']), 'Missing profile link'
+    for section in spec['sections']:
+        for entry in section['entries']:
+            assert all(url in links for _, url in entry.get('links', [])), 'Missing project link'
     if spec['lang'] == 'fa':
         assert any('Vazirmatn-Regular' in font for font in fonts)
         assert any('Vazirmatn-Bold' in font for font in fonts)

@@ -28,6 +28,11 @@ His research examines uncertainty in VSR and decision making in Go. He uses PyTo
 - Robotics instructor at Mohandesin Bartar Institute for one year.
 - Teaching experience in data structures, programming, robotics, C#, and Unity.
 
+- [EGOSD source code](https://github.com/MehradYaghoubi/EGOSD): visual speech recognition research implementation.
+- [Research & Engineering Router](https://github.com/MehradYaghoubi/jev-research-engineering): an open-source agent skill I created to select relevant code and research evidence, with optional model-assisted routing and offline checks.
+
+- Open-source contributor to [XERJ Corpus Hub](https://hub.xerj.org/contributors/MehradYaghoubi).
+
 ## Technical skills
 
 Python · PyTorch (CUDA) · OpenCV · MediaPipe · FastAPI · REST APIs · WordPress · Git · Linux · Docker · SQL · MySQL · PostgreSQL

@@ -2,7 +2,7 @@ export const site = {
   url: 'https://mehradyaghoubi.github.io', name: 'Mehrad Yaghoubi', nameFa: 'مهراد یعقوبی',
   email: 'mehradyaghoubi96@gmail.com', updated: '2026-11-10',
   phone: '+98 991 209 3038', phoneFa: '09912093038',
-  resumeRevision: 'skills-20261110',
+  resumeRevision: 'opensource-20261110',
   verification: 'i7WKBB65tpHu5x1Twx67p9P1zgQZtljbYl3V0oTqAdM',
   profiles: [
     ['Google Scholar', 'https://scholar.google.com/citations?user=7X057KcAAAAJ'],
@@ -12,9 +12,18 @@ export const site = {
     ['LinkedIn', 'https://www.linkedin.com/in/mehrad-yaghoubi'],
   ],
 };
+export const routerProject = {
+  title: 'Research & Engineering Router',
+  url: 'https://github.com/MehradYaghoubi/jev-research-engineering',
+  contributorUrl: 'https://hub.xerj.org/contributors/MehradYaghoubi',
+  description: {
+    en: 'Created an open-source agent skill for selecting relevant code and research evidence, with optional model-assisted routing and offline checks.',
+    fa: 'توسعه اسکیل متن‌باز برای انتخاب کد و منابع پژوهشی مرتبط، با امکان انتخاب شواهد به کمک مدل و بررسی‌های آفلاین.',
+  },
+};
 export const papers = [
   {
-    id: 'egosd', year: '2026',
+    id: 'egosd', year: '2026', code: 'https://github.com/MehradYaghoubi/EGOSD',
     title: 'Entropy-Gated Online Self-Distillation for Visual Speech Recognition Based on Connectionist Temporal Classification',
     titleFa: 'خودتقطیری آنلاین با دروازه آنتروپی برای بازشناسی گفتار دیداری مبتنی بر CTC',
     authors: 'Mehrad Yaghoubi, Azam Bastanfard',
