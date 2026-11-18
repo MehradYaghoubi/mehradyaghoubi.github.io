@@ -35,7 +35,7 @@ const workProjects = (c) => {
     { title: 'EGOSD', paragraphs: [fa
       ? 'خودتقطیری مبتنی بر عدم قطعیت برای بازشناسی گفتار دیداری. آموزش و اجرای مدل روی پردازنده گرافیکی.'
       : 'Uncertainty-guided self-distillation for visual speech recognition. GPU model training and inference.'],
-      status: fa ? 'در حال داوری در مجله' : 'Under review at The Visual Computer',
+      status: fa ? 'پذیرفته‌شده برای چاپ در مجله' : papers[0].status.en,
       statusLatin: fa ? 'The Visual Computer' : '',
       links: [[fa ? 'پیش‌چاپ مقاله' : 'Preprint', papers[0].url], ['GitHub', papers[0].code]],
     },
@@ -44,8 +44,7 @@ const workProjects = (c) => {
     contribution(c.lang),
     { title: fa ? 'شوفاژ یعقوبی' : 'Shofazh Yaghoubi', paragraphs: [c.shop],
       links: [[fa ? 'وب‌سایت' : 'Website', 'http://shofazhyaghoubi.ir/']] },
-    { title: fa ? 'ابزار تشخیص متن' : 'OCR tool', paragraphs: [c.ocr] },
-    { title: fa ? 'چت‌بات شخصی RAG' : 'Personal RAG chatbot', status: fa ? 'در دست توسعه' : 'In development' },
+    { title: fa ? 'چت‌بات RAG و ابزار OCR' : 'RAG chatbot and OCR tool', paragraphs: [fa ? 'چت‌بات شخصی RAG با مدل‌های Transformers در دست توسعه است. ابزار OCR را با API خارجی توسعه داده‌ام.' : 'Developing a personal RAG chatbot using Transformer-based language models. Built a separate API-based OCR tool.'] },
   ];
 };
 
@@ -58,7 +57,7 @@ const documents = [{
     section('Selected research', papers.map((p) => ({
       title: p.title, meta: `${p.authors} · ${p.year}`,
       status: p.status.en, paragraphs: [p.summary.en],
-      links: [[p.doi ? 'DOI 10.2139/ssrn.6831426' : 'arXiv 2607.26946', p.doi || p.url], ...(p.code ? [['GitHub', p.code]] : [])],
+      links: [[p.doi ? 'Preprint DOI 10.2139/ssrn.6831426' : 'arXiv 2607.26946', p.doi || p.url], ...(p.code ? [['GitHub', p.code]] : [])],
     }))),
     section('Education', education(en)),
     section('Research software and open source', [software(false), router('en'), contribution('en')]),

@@ -6,7 +6,7 @@ His research examines uncertainty in VSR and decision making in Go. He uses PyTo
 
 ## Research papers
 
-- [Entropy-Gated Online Self-Distillation for Visual Speech Recognition Based on Connectionist Temporal Classification](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6831426). Mehrad Yaghoubi and Azam Bastanfard, 2026. Preprint under review at The Visual Computer. The method uses frame-level uncertainty to guide self-distillation in a lightweight VSR model, with negligible additional inference cost.
+- [Entropy-Gated Online Self-Distillation for Visual Speech Recognition Based on Connectionist Temporal Classification](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6831426). Mehrad Yaghoubi and Azam Bastanfard, 2026. Accepted for publication in The Visual Computer. Public preprint available. The method uses frame-level uncertainty to guide self-distillation in a lightweight VSR model, with negligible additional inference cost.
 - [Belief-Guided Decision Making with Uncertainty Gating in the Game of Go](https://arxiv.org/abs/2607.26946). Mehrad Yaghoubi, Azam Bastanfard, Abbas Jalilvand, and Ashkan Rezaei, 2026. arXiv preprint.
 
 ## Selected work
@@ -16,7 +16,7 @@ His research examines uncertainty in VSR and decision making in Go. He uses PyTo
 - [PyLipExtractor](https://github.com/MehradYaghoubi/pylipextractor). open-source Python package for extracting lip regions from video with MediaPipe Face Mesh. Includes temporal smoothing, optional illumination normalization, configurable processing, and CPU/CUDA support.
 - [Shofazh Yaghoubi](http://shofazhyaghoubi.ir/): a service and commerce website for a heating business.
 - OCR tool using an external API.
-- Personal retrieval-augmented generation (RAG) chatbot, in development.
+- Personal RAG chatbot with Transformer-based language models, in development.
 
 ## Education and teaching
 
@@ -29,13 +29,13 @@ His research examines uncertainty in VSR and decision making in Go. He uses PyTo
 - Teaching experience in data structures, programming, robotics, C#, and Unity.
 
 - [EGOSD source code](https://github.com/MehradYaghoubi/EGOSD): visual speech recognition research implementation.
-- [Research & Engineering Router](https://github.com/MehradYaghoubi/jev-research-engineering): an open-source agent skill I created to select relevant code and research evidence, with optional model-assisted routing and offline checks.
+- [Research & Engineering Router](https://github.com/MehradYaghoubi/jev-research-engineering): an open-source skill I created for Agentic AI workflows and relevant code and research evidence selection, with optional model-assisted routing.
 
 - Open-source contributor to [XERJ Corpus Hub](https://hub.xerj.org/contributors/MehradYaghoubi).
 
 ## Technical skills
 
-Python · PyTorch (CUDA) · OpenCV · MediaPipe · FastAPI · REST APIs · WordPress · Git · Linux · Docker · SQL · MySQL · PostgreSQL
+Python · PyTorch (CUDA) · OpenCV · MediaPipe · FastAPI · REST APIs · WordPress · Git · Linux · Docker · SQL · MySQL · PostgreSQL · RAG · Transformers · Agentic AI
 
 ## Profiles and contact
 

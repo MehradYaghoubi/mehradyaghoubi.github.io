@@ -21,20 +21,20 @@ The profiles and web CVs are available in English and Persian. Downloadable file
 ## Research and selected work
 
 - AI Specialist at Ghasedak Peik Shahr for two months in 2026. Developed a travel chatbot and WordPress integrations for Parsegasht and TaxiRooz, a competitor price checker, and an operator training dashboard and homepage theme for Parsegasht.
-- Research on efficient VSR models and learning with uncertainty. The [VSR manuscript](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6831426) is under review at *The Visual Computer*. The [Go paper](https://arxiv.org/abs/2607.26946) is an arXiv preprint.
+- Research on efficient VSR models and learning with uncertainty. The [VSR manuscript](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6831426) has been accepted for publication in *The Visual Computer*. The [Go paper](https://arxiv.org/abs/2607.26946) is an arXiv preprint.
 - [PyLipExtractor](https://github.com/MehradYaghoubi/pylipextractor), an open-source Python package for extracting lip regions from video.
 - Web development for [Parseh Gasht](https://parsegasht.com/) and [shofazhyaghoubi.ir](http://shofazhyaghoubi.ir/).
-- An API-based OCR tool and a personal RAG chatbot that is in development.
+- An API-based OCR tool and a personal RAG chatbot using Transformer-based language models, in development.
 - Co-founder of Fidar Technology Fartak for 1.5 years, a university startup project exploring games informed by psychology for crime prevention. The venture was not formally incorporated.
 
 - [EGOSD source code](https://github.com/MehradYaghoubi/EGOSD): visual speech recognition research implementation.
-- [Research & Engineering Router](https://github.com/MehradYaghoubi/jev-research-engineering): an open-source agent skill I created to select relevant code and research evidence, with optional model-assisted routing and offline checks.
+- [Research & Engineering Router](https://github.com/MehradYaghoubi/jev-research-engineering): an open-source skill I created for Agentic AI workflows and relevant code and research evidence selection, with optional model-assisted routing.
 
 - Open-source contributor to [XERJ Corpus Hub](https://hub.xerj.org/contributors/MehradYaghoubi).
 
 ## Technical skills
 
-Python · PyTorch (CUDA) · OpenCV · MediaPipe · FastAPI · REST APIs · WordPress · Git · Linux · Docker · SQL · MySQL · PostgreSQL
+Python · PyTorch (CUDA) · OpenCV · MediaPipe · FastAPI · REST APIs · WordPress · Git · Linux · Docker · SQL · MySQL · PostgreSQL · RAG · Transformers · Agentic AI
 
 ## Profiles
 
