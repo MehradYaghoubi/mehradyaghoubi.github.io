@@ -11,7 +11,7 @@ His research examines uncertainty in VSR and decision making in Go. He uses PyTo
 
 ## Selected work
 
-- AI Specialist at Ghasedak Peik Shahr for two months in 2026. Developed a Persian travel chatbot with three WordPress plugins, a competitor price checker, and an operator training dashboard and homepage theme for Parsegasht. [Website](https://parsegasht.com/).
+- AI Specialist on a two-month project with Ghasedak Peik Shahr in 2026. Developed a competitor price checker, an operator training dashboard and a custom WordPress homepage theme for Parsegasht. [Website](https://parsegasht.com/).
 - Co-founder at Fidar Technology Fartak for 1.5 years. The university startup project explored games informed by psychology for crime prevention and was not formally incorporated.
 - [PyLipExtractor](https://github.com/MehradYaghoubi/pylipextractor). open-source Python package for extracting lip regions from video with MediaPipe Face Mesh. Includes temporal smoothing, optional illumination normalization, configurable processing, and CPU/CUDA support.
 - [Shofazh Yaghoubi](http://shofazhyaghoubi.ir/): a service and commerce website for a heating business.

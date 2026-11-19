@@ -2,7 +2,7 @@ export const site = {
   url: 'https://mehradyaghoubi.github.io', name: 'Mehrad Yaghoubi', nameFa: 'مهراد یعقوبی',
   email: 'mehradyaghoubi96@gmail.com', updated: '2026-11-19',
   phone: '+98 991 209 3038', phoneFa: '09912093038',
-  resumeRevision: 'public-projects-20261119',
+  resumeRevision: 'project-engagement-20261119',
   verification: 'i7WKBB65tpHu5x1Twx67p9P1zgQZtljbYl3V0oTqAdM',
   profiles: [
     ['Google Scholar', 'https://scholar.google.com/citations?user=7X057KcAAAAJ'],
@@ -108,7 +108,7 @@ export const content = {
     ocrTitle: 'OCR tool', ocr: 'Text recognition using an external API.', chatbotTitle: 'RAG chatbot', chatbot: 'Personal RAG chatbot with Transformer-based language models.',
     built: 'Developed', inProgress: 'In development', visit: 'Visit website',
     researchTeaching: 'Research and teaching', experience: 'Professional experience', experienceItems: [
-      { role: 'AI Specialist', employer: 'Ghasedak Peik Shahr', period: '2026 · 2 months', summary: '', highlights: ['Built a Persian travel chatbot with three WordPress plugins.', 'Developed a bot to check competitor prices.', 'Created an operator training dashboard and a custom homepage theme for Parsegasht.'] },
+      { role: 'AI Specialist (Project Engagement)', employer: 'Ghasedak Peik Shahr', period: '2026 · 2 months', summary: '', highlights: ['Developed a bot to check competitor prices.', 'Created an operator training dashboard and a custom homepage theme for Parsegasht.'] },
       { role: 'Co-founder', employer: 'Fidar Technology Fartak', period: '1.5 years', summary: 'University startup project developing games informed by psychology for crime prevention. The venture was not formally incorporated.', highlights: [] },
       { role: 'University research', employer: 'Research Center, Islamic Azad University, Karaj', period: '1.5 years', summary: '', highlights: [] },
       { role: 'Software Instructor', employer: 'Faculty of Work and Skills, Islamic Azad University, Karaj', period: '1 year', summary: '', highlights: [] },
@@ -155,7 +155,7 @@ export const content = {
     ocrTitle: 'ابزار OCR', ocr: 'تشخیص متن با استفاده از یک API خارجی.', chatbotTitle: 'چت‌بات RAG', chatbot: 'چت‌بات شخصی RAG با مدل‌های Transformers.',
     built: 'توسعه‌یافته', inProgress: 'در حال توسعه', visit: 'دیدن وب‌سایت',
     researchTeaching: 'پژوهش و تدریس', experience: 'سوابق حرفه‌ای و پژوهشی', experienceItems: [
-      { role: 'متخصص هوش مصنوعی', employer: 'شرکت قاصدک پیک شهر', period: 'سال ۱۴۰۵، دو ماه', summary: '', highlights: ['توسعه چت‌بات فارسی سفر با سه افزونه WordPress.', 'توسعه ربات بررسی قیمت رقبا.', 'ساخت داشبورد آموزشی اپراتورها و قالب اختصاصی صفحه اصلی پارسه‌گشت.'] },
+      { role: 'متخصص هوش مصنوعی (همکاری پروژه‌ای)', employer: 'شرکت قاصدک پیک شهر', period: 'سال ۱۴۰۵، دو ماه', summary: '', highlights: ['توسعه ربات بررسی قیمت رقبا.', 'ساخت داشبورد آموزشی اپراتورها و قالب اختصاصی صفحه اصلی پارسه‌گشت.'] },
       { role: 'هم‌بنیان‌گذار', employer: 'فیدار تکنولوژی فرتاک', period: 'یک‌ونیم سال', summary: 'طرح استارتاپی دانشگاهی برای توسعه بازی‌های مبتنی بر روان‌شناسی با هدف کمک به پیشگیری از جرم. این طرح به ثبت شرکت نرسید.', highlights: [] },
       { role: 'فعالیت پژوهشی', employer: 'مرکز تحقیقات دانشگاه آزاد اسلامی واحد کرج', period: 'یک‌ونیم سال', summary: '', highlights: [] },
       { role: 'مدرس رشته نرم‌افزار', employer: 'دانشکده کار و مهارت دانشگاه آزاد اسلامی واحد کرج', period: 'یک سال', summary: '', highlights: [] },

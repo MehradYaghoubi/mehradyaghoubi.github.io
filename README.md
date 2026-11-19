@@ -20,7 +20,7 @@ The profiles and web CVs are available in English and Persian. Downloadable file
 
 ## Research and selected work
 
-- AI Specialist at Ghasedak Peik Shahr for two months in 2026. Developed a travel chatbot and WordPress integrations for Parsegasht and TaxiRooz, a competitor price checker, and an operator training dashboard and homepage theme for Parsegasht.
+- AI Specialist on a two-month project with Ghasedak Peik Shahr in 2026. Developed a competitor price checker, an operator training dashboard and a custom WordPress homepage theme for Parsegasht.
 - Research on efficient VSR models and learning with uncertainty. The [VSR manuscript](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6831426) has been accepted for publication in *The Visual Computer*. The [Go paper](https://arxiv.org/abs/2607.26946) is an arXiv preprint.
 - [PyLipExtractor](https://github.com/MehradYaghoubi/pylipextractor), an open-source Python package for extracting lip regions from video.
 - Web development for [Parseh Gasht](https://parsegasht.com/) and [shofazhyaghoubi.ir](http://shofazhyaghoubi.ir/).
