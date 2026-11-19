@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import { site, content, papers, routerProject } from '../src/content.js';
+import { site, content, papers, routerProject, workProjects } from '../src/content.js';
 
 const section = (heading, entries) => ({ heading, entries });
 const paragraph = (text, extra = {}) => ({ text, ...extra });
@@ -29,25 +29,6 @@ const contribution = (lang) => ({
   paragraphs: [lang === 'fa' ? 'مشارکت‌کننده متن‌باز.' : 'Open-source contributor.'],
   links: [[lang === 'fa' ? 'پروفایل مشارکت' : 'Contributor profile', routerProject.contributorUrl]],
 });
-const workProjects = (c) => {
-  const fa = c.lang === 'fa';
-  return [
-    { title: 'EGOSD', paragraphs: [fa
-      ? 'خودتقطیری مبتنی بر عدم قطعیت برای بازشناسی گفتار دیداری. آموزش و اجرای مدل روی پردازنده گرافیکی.'
-      : 'Uncertainty-guided self-distillation for visual speech recognition. GPU model training and inference.'],
-      status: fa ? 'پذیرفته‌شده برای چاپ در مجله' : papers[0].status.en,
-      statusLatin: fa ? 'The Visual Computer' : '',
-      links: [[fa ? 'پیش‌چاپ مقاله' : 'Preprint', papers[0].url], ['GitHub', papers[0].code]],
-    },
-    software(fa),
-    router(c.lang),
-    contribution(c.lang),
-    { title: fa ? 'شوفاژ یعقوبی' : 'Shofazh Yaghoubi', paragraphs: [c.shop],
-      links: [[fa ? 'وب‌سایت' : 'Website', 'http://shofazhyaghoubi.ir/']] },
-    { title: fa ? 'چت‌بات RAG و ابزار OCR' : 'RAG chatbot and OCR tool', paragraphs: [fa ? 'چت‌بات شخصی RAG با مدل‌های Transformers در دست توسعه است. ابزار OCR را با API خارجی توسعه داده‌ام.' : 'Developing a personal RAG chatbot using Transformer-based language models. Built a separate API-based OCR tool.'] },
-  ];
-};
-
 const en = content.en;
 const documents = [{
   filename: 'Mehrad-Yaghoubi-Academic-CV', lang: 'en', name: site.name,
@@ -87,7 +68,10 @@ for (const c of [content.en, content.fa]) {
         paragraph(c.skillList.slice(9).join(' · '), { latin: true }),
       ]),
       section(fa ? 'سوابق حرفه‌ای' : 'Professional experience', experience(c.experienceItems)),
-      { ...section(fa ? 'پروژه‌های منتخب' : 'Selected projects', workProjects(c)), pageBreakBefore: true },
+      { ...section(fa ? 'پروژه‌های منتخب' : 'Selected projects', workProjects.map((p) => ({
+        title: p.title, paragraphs: [p[c.lang]], status: p.status?.[c.lang],
+        links: [['GitHub', p.url], ...(p.paper ? [[fa ? 'پیش‌چاپ' : 'Preprint', p.paper]] : [])],
+      }))), pageBreakBefore: true },
       section(c.education, education(c)),
       section(fa ? 'زبان‌ها' : 'Languages', fa
         ? [paragraph('فارسی، زبان مادری · English (B1)')]

@@ -1,8 +1,8 @@
 export const site = {
   url: 'https://mehradyaghoubi.github.io', name: 'Mehrad Yaghoubi', nameFa: 'مهراد یعقوبی',
-  email: 'mehradyaghoubi96@gmail.com', updated: '2026-11-18',
+  email: 'mehradyaghoubi96@gmail.com', updated: '2026-11-19',
   phone: '+98 991 209 3038', phoneFa: '09912093038',
-  resumeRevision: 'accepted-20261118',
+  resumeRevision: 'public-projects-20261119',
   verification: 'i7WKBB65tpHu5x1Twx67p9P1zgQZtljbYl3V0oTqAdM',
   profiles: [
     ['Google Scholar', 'https://scholar.google.com/citations?user=7X057KcAAAAJ'],
@@ -53,6 +53,32 @@ export const papers = [
     },
   },
 ];
+export const workProjects = [
+  {
+    title: 'EGOSD', url: papers[0].code, paper: papers[0].url, status: papers[0].status,
+    en: 'Used frame-level uncertainty to guide lip-reading model training. PyTorch, CUDA, CTC and knowledge distillation.',
+    fa: 'آموزش مدل لب‌خوانی با هدایت عدم قطعیت هر فریم. ابزارها و روش‌ها: PyTorch، CUDA، CTC و تقطیر دانش.',
+  },
+  {
+    title: 'Persian Maintenance RAG', url: 'https://github.com/MehradYaghoubi/persian-maintenance-rag',
+    en: 'Built Persian QA with citations to the correct manual revision. Hybrid retrieval with a multilingual E5 Transformer and FastAPI handled 35/40 cases on a benchmark of fictional manuals.',
+    fa: 'پرسش و پاسخ فارسی با ارجاع به نسخه درست راهنما. بازیابی ترکیبی با Transformers چندزبانه E5 و FastAPI در آزمون راهنماهای فرضی، ۳۵ مورد از ۴۰ مورد را درست مدیریت کرد.',
+  },
+  {
+    title: 'Steel Defect Inspector', url: 'https://github.com/MehradYaghoubi/steel-defect-inspector',
+    en: 'Built and evaluated a steel surface defect detector with a CPU demo. Used PyTorch, YOLO11, ONNX Runtime and NEU-DET evaluation.',
+    fa: 'توسعه و ارزیابی مدل تشخیص عیب سطح فولاد با دموی CPU. ابزارها: PyTorch، YOLO11 و ONNX Runtime. ارزیابی روی NEU-DET.',
+  },
+  {
+    title: routerProject.title, url: routerProject.url, ...routerProject.description,
+  },
+  {
+    title: 'Sanadkhan OCR', url: 'https://github.com/MehradYaghoubi/sanadkhan-ocr',
+    en: 'Built a Persian document reader with cropping and structured JSON output. Python, FastAPI and a configurable vision model API.',
+    fa: 'استخراج فیلدهای مدارک فارسی با برش تصویر و خروجی JSON. ابزارها: Python، FastAPI و API مدل بینایی قابل تنظیم.',
+  },
+];
+
 export const content = {
   en: {
     lang: 'en', dir: 'ltr', name: site.name, otherName: site.nameFa,

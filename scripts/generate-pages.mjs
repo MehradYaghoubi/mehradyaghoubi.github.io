@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import { site, papers, content, routerProject } from '../src/content.js';
+import { site, papers, content, routerProject, workProjects } from '../src/content.js';
 
 const escape = (value) => String(value).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const link = (url, label, extra = '') => `<a href="${escape(url)}" ${extra}>${escape(label)}</a>`;
@@ -27,14 +27,17 @@ function experience(c, items = c.experienceItems) {
   return items.map((item) => `<article class="education-item"><h3>${escape(item.role)}</h3><p>${escape(item.employer)} · ${escape(item.period)}</p>${item.summary ? `<p>${escape(item.summary)}</p>` : ''}${item.highlights.length ? `<ul>${item.highlights.map((highlight) => `<li>${escape(highlight)}</li>`).join('')}</ul>` : ''}</article>`).join('');
 }
 function software(c, type = 'profile') {
+  if (type === 'work') {
+    return `<div class="project-list">${workProjects.map((p) => `<article><h3>${escape(p.title)}</h3><p>${escape(p[c.lang])}</p>${p.status ? `<p class="secondary">${escape(p.status[c.lang])}</p>` : ''}<div class="text-links">${link(p.url, c.source)}${p.paper ? link(p.paper, c.paper) : ''}</div></article>`).join('')}</div>`;
+  }
   const extractor = `<article class="featured-project"><h3>${link('https://github.com/MehradYaghoubi/pylipextractor', 'PyLipExtractor')}</h3><p>${c.extractor}</p><div class="text-links">${link('https://github.com/MehradYaghoubi/pylipextractor', c.source)}${link('https://pypi.org/project/pylipextractor/', c.package)}</div></article>`;
   const router = `<article class="featured-project"><h3>${link(routerProject.url, routerProject.title)}</h3><p>${escape(routerProject.description[c.lang])}</p><div class="text-links">${link(routerProject.url, c.source)}</div></article>`;
   const contribution = `<article class="featured-project"><h3>XERJ Corpus Hub</h3><p>${c.lang === 'fa' ? 'مشارکت‌کننده متن‌باز.' : 'Open-source contributor.'}</p><div class="text-links">${link(routerProject.contributorUrl, c.lang === 'fa' ? 'پروفایل مشارکت' : 'Contributor profile')}</div></article>`;
   if (type === 'academic') return extractor + router + contribution;
   return extractor + router + contribution + `<div class="project-list">${[
-    ...(type === 'profile' ? [['Parseh Gasht', c.parseh, 'https://parsegasht.com/', c.visit]] : [['EGOSD', `${papers[0].summary[c.lang]} ${papers[0].status[c.lang]}.`, papers[0].code, c.source]]),
+    ['Parseh Gasht', c.parseh, 'https://parsegasht.com/', c.visit],
     [c.lang === 'fa' ? 'شوفاژ یعقوبی' : 'Shofazh Yaghoubi', c.shop, 'http://shofazhyaghoubi.ir/', c.visit],
-    [c.ocrTitle, c.ocr, '', ''], [c.chatbotTitle, c.chatbot, '', c.inProgress],
+    [workProjects[4].title, workProjects[4][c.lang], workProjects[4].url, c.source], [c.chatbotTitle, c.chatbot, '', c.inProgress],
   ].map(([name, description, url, action]) => `<article><h3>${escape(name)}</h3><p>${description}</p>${url ? link(url, action) : action ? `<p class="secondary project-state">${action}</p>` : ''}</article>`).join('')}</div>`;
 }
 
