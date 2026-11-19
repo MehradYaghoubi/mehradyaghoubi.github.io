@@ -26,7 +26,7 @@ His research examines uncertainty in VSR and decision making in Go. He uses PyTo
 - Software instructor at the Faculty of Work and Skills, Islamic Azad University, Karaj, for one year.
 - Programming instructor at Net College Institute for one year.
 - Robotics instructor at Mohandesin Bartar Institute for one year.
-- Teaching experience in data structures, programming, robotics, C#, and Unity.
+- Teaching experience in data structures, programming and robotics.
 
 - [EGOSD source code](https://github.com/MehradYaghoubi/EGOSD): visual speech recognition research implementation.
 - [Research & Engineering Router](https://github.com/MehradYaghoubi/jev-research-engineering): an open-source skill I created for Agentic AI workflows and relevant code and research evidence selection, with optional model-assisted routing.

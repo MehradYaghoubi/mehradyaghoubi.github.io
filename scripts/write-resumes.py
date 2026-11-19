@@ -142,7 +142,7 @@ for spec in SPECS:
             for p in paragraphs[:-1]:
                 p.paragraph_format.keep_with_next = True
             if paragraphs:
-                paragraphs[-1].paragraph_format.space_after = Pt(7)
+                paragraphs[-1].paragraph_format.space_after = Pt(section.get('entrySpacing', 7))
 
     footer = s.footer.paragraphs[0]
     flag(footer._p.get_or_add_pPr(), 'bidi', 0)

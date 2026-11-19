@@ -2,7 +2,7 @@ export const site = {
   url: 'https://mehradyaghoubi.github.io', name: 'Mehrad Yaghoubi', nameFa: 'مهراد یعقوبی',
   email: 'mehradyaghoubi96@gmail.com', updated: '2026-11-20',
   phone: '+98 991 209 3038', phoneFa: '09912093038',
-  resumeRevision: 'operator-console-20261120',
+  resumeRevision: 'go-paper-skills-20261120',
   verification: 'i7WKBB65tpHu5x1Twx67p9P1zgQZtljbYl3V0oTqAdM',
   profiles: [
     ['Google Scholar', 'https://scholar.google.com/citations?user=7X057KcAAAAJ'],
@@ -82,6 +82,11 @@ export const workProjects = [
     en: 'Built a local Persian chat with operator queues, account management and conversation transfers. Used Python, SQLite and JavaScript.',
     fa: 'ساخت چت فارسی محلی با صف اپراتورها، مدیریت حساب‌ها و انتقال گفتگو. ابزارها: Python، SQLite و JavaScript.',
   },
+  {
+    title: papers[1].title, titleFa: papers[1].titleFa, paper: papers[1].url,
+    en: 'Co-authored a preprint on belief models and uncertainty gating for decisions in Go.',
+    fa: 'هم‌نویسنده پیش‌چاپی درباره مدل باور و دروازه عدم قطعیت برای تصمیم‌گیری در بازی Go.',
+  },
 ];
 
 export const content = {
@@ -122,7 +127,7 @@ export const content = {
     ],
     education: 'Education', msc: 'M.Sc. in Artificial Intelligence', mscState: '2024 to 2026 (expected), preparing for thesis defense', mscGpa: 'GPA: 18.45/20', mscThesis: 'Thesis: improving lip-reading accuracy with deep neural networks.',
     bsc: 'B.Sc. in Computer Science (Software Engineering)', bscPeriod: '2017 to 2023', bscGpa: 'GPA: 14.68/20',
-    skills: 'Technical skills', skillList: ['Python', 'PyTorch (CUDA)', 'OpenCV', 'MediaPipe', 'FastAPI', 'REST APIs', 'WordPress', 'Git', 'Linux', 'Docker', 'SQL', 'MySQL', 'PostgreSQL', 'RAG', 'Transformers', 'Agentic AI'],
+    skills: 'Technical skills', skillList: ['Python', 'PyTorch (CUDA)', 'OpenCV', 'MediaPipe', 'YOLO11', 'ONNX Runtime', 'RAG', 'Transformers', 'Agentic AI', 'JavaScript', 'FastAPI', 'REST APIs', 'WordPress', 'SQLite', 'SQL', 'MySQL', 'PostgreSQL', 'Docker', 'Git', 'Linux'],
     researchSkillList: ['Python', 'PyTorch (CUDA)', 'TorchVision', 'OpenCV', 'MediaPipe', 'NumPy', 'Pandas', 'scikit-learn', 'Git', 'Linux', 'LaTeX', 'Docker', 'SQL', 'MySQL', 'PostgreSQL', 'RAG', 'Transformers', 'Agentic AI'],
     contact: 'Contact', contactBody: 'Please email me about doctoral opportunities or research collaboration.',
     updated: 'Updated November 2026', footer: 'Mehrad Yaghoubi · مهراد یعقوبی',
@@ -169,7 +174,7 @@ export const content = {
     ],
     education: 'تحصیلات', msc: 'کارشناسی ارشد هوش مصنوعی', mscState: '۱۴۰۳ تا ۱۴۰۵ (پیش‌بینی‌شده)، آماده دفاع از پایان‌نامه', mscGpa: 'معدل: ۱۸٫۴۵ از ۲۰', mscThesis: 'موضوع پایان‌نامه: بهبود دقت لب‌خوانی با شبکه‌های عصبی عمیق.',
     bsc: 'کارشناسی علوم کامپیوتر (مهندسی نرم‌افزار)', bscPeriod: '۱۳۹۶ تا ۱۴۰۲', bscGpa: 'معدل: ۱۴٫۶۸ از ۲۰',
-    skills: 'مهارت‌های فنی', skillList: ['Python', 'PyTorch (CUDA)', 'OpenCV', 'MediaPipe', 'FastAPI', 'REST APIs', 'WordPress', 'Git', 'Linux', 'Docker', 'SQL', 'MySQL', 'PostgreSQL', 'RAG', 'Transformers', 'Agentic AI'],
+    skills: 'مهارت‌های فنی', skillList: ['Python', 'PyTorch (CUDA)', 'OpenCV', 'MediaPipe', 'YOLO11', 'ONNX Runtime', 'RAG', 'Transformers', 'Agentic AI', 'JavaScript', 'FastAPI', 'REST APIs', 'WordPress', 'SQLite', 'SQL', 'MySQL', 'PostgreSQL', 'Docker', 'Git', 'Linux'],
     researchSkillList: ['Python', 'PyTorch (CUDA)', 'TorchVision', 'OpenCV', 'MediaPipe', 'NumPy', 'Pandas', 'scikit-learn', 'Git', 'Linux', 'LaTeX', 'Docker', 'SQL', 'MySQL', 'PostgreSQL', 'RAG', 'Transformers', 'Agentic AI'],
     contact: 'ارتباط', contactBody: 'برای موقعیت دکتری یا همکاری پژوهشی می‌توانید به من ایمیل بزنید.',
     updated: 'به‌روزرسانی: نوامبر ۲۰۲۶', footer: 'مهراد یعقوبی · Mehrad Yaghoubi',

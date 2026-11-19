@@ -63,19 +63,23 @@ for (const c of [content.en, content.fa]) {
     sections: [
       section(fa ? 'معرفی' : 'Profile', [paragraph(c.workCvIntro)]),
       section(c.skills, [
-        paragraph(c.skillList.slice(0, 4).join(' · '), { latin: true }),
-        paragraph(c.skillList.slice(4, 9).join(' · '), { latin: true }),
-        paragraph(c.skillList.slice(9).join(' · '), { latin: true }),
+        paragraph(c.skillList.slice(0, 6).join(' · '), { latin: true }),
+        paragraph(c.skillList.slice(6, 13).join(' · '), { latin: true }),
+        paragraph(c.skillList.slice(13).join(' · '), { latin: true }),
       ]),
       section(fa ? 'سوابق حرفه‌ای' : 'Professional experience', experience(c.experienceItems)),
+      section(fa ? 'پژوهش منتخب' : 'Selected research', workProjects.filter((p) => !p.url).map((p) => ({
+        title: fa ? 'مدل باور و عدم قطعیت در بازی Go' : 'Belief models and uncertainty in Go',
+        paragraphs: [p[c.lang]], links: [[fa ? 'پیش‌چاپ arXiv' : 'arXiv preprint', p.paper]],
+      }))),
+      { ...section(fa ? 'پروژه‌های منتخب' : 'Selected projects', workProjects.filter((p) => p.url).map((p) => ({
+        title: p.title, paragraphs: [p[c.lang]], status: p.status?.[c.lang],
+        links: [...(p.url ? [['GitHub', p.url]] : []), ...(p.paper ? [[fa ? 'پیش‌چاپ' : 'Preprint', p.paper]] : [])],
+      }))), pageBreakBefore: true, entrySpacing: 3 },
+      section(c.education, education(c)),
       section(fa ? 'زبان‌ها' : 'Languages', fa
         ? [paragraph('فارسی، زبان مادری · English (B1)')]
         : [paragraph('Persian (native) · English (B1)')]),
-      { ...section(fa ? 'پروژه‌های منتخب' : 'Selected projects', workProjects.map((p) => ({
-        title: p.title, paragraphs: [p[c.lang]], status: p.status?.[c.lang],
-        links: [['GitHub', p.url], ...(p.paper ? [[fa ? 'پیش‌چاپ' : 'Preprint', p.paper]] : [])],
-      }))), pageBreakBefore: true },
-      section(c.education, education(c)),
     ],
   });
 }

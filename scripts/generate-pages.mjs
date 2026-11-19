@@ -28,7 +28,7 @@ function experience(c, items = c.experienceItems) {
 }
 function software(c, type = 'profile') {
   if (type === 'work') {
-    return `<div class="project-list">${workProjects.map((p) => `<article><h3>${escape(p.title)}</h3><p>${escape(p[c.lang])}</p>${p.status ? `<p class="secondary">${escape(p.status[c.lang])}</p>` : ''}<div class="text-links">${link(p.url, c.source)}${p.paper ? link(p.paper, c.paper) : ''}</div></article>`).join('')}</div>`;
+    return `<div class="project-list">${workProjects.map((p) => `<article><h3>${escape(c.lang === 'fa' && p.titleFa ? p.titleFa : p.title)}</h3><p>${escape(p[c.lang])}</p>${p.status ? `<p class="secondary">${escape(p.status[c.lang])}</p>` : ''}<div class="text-links">${p.url ? link(p.url, c.source) : ''}${p.paper ? link(p.paper, c.paper) : ''}</div></article>`).join('')}</div>`;
   }
   const extractor = `<article class="featured-project"><h3>${link('https://github.com/MehradYaghoubi/pylipextractor', 'PyLipExtractor')}</h3><p>${c.extractor}</p><div class="text-links">${link('https://github.com/MehradYaghoubi/pylipextractor', c.source)}${link('https://pypi.org/project/pylipextractor/', c.package)}</div></article>`;
   const router = `<article class="featured-project"><h3>${link(routerProject.url, routerProject.title)}</h3><p>${escape(routerProject.description[c.lang])}</p><div class="text-links">${link(routerProject.url, c.source)}</div></article>`;
