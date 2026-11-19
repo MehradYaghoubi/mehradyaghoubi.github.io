@@ -1,8 +1,8 @@
 export const site = {
   url: 'https://mehradyaghoubi.github.io', name: 'Mehrad Yaghoubi', nameFa: 'مهراد یعقوبی',
-  email: 'mehradyaghoubi96@gmail.com', updated: '2026-11-19',
+  email: 'mehradyaghoubi96@gmail.com', updated: '2026-11-20',
   phone: '+98 991 209 3038', phoneFa: '09912093038',
-  resumeRevision: 'project-engagement-20261119',
+  resumeRevision: 'operator-console-20261120',
   verification: 'i7WKBB65tpHu5x1Twx67p9P1zgQZtljbYl3V0oTqAdM',
   profiles: [
     ['Google Scholar', 'https://scholar.google.com/citations?user=7X057KcAAAAJ'],
@@ -76,6 +76,11 @@ export const workProjects = [
     title: 'Sanadkhan OCR', url: 'https://github.com/MehradYaghoubi/sanadkhan-ocr',
     en: 'Built a Persian document reader with cropping and structured JSON output. Python, FastAPI and a configurable vision model API.',
     fa: 'استخراج فیلدهای مدارک فارسی با برش تصویر و خروجی JSON. ابزارها: Python، FastAPI و API مدل بینایی قابل تنظیم.',
+  },
+  {
+    title: 'Persian Travel Chat and Operator Console', url: 'https://github.com/MehradYaghoubi/persian-travel-chat-demo',
+    en: 'Built a local Persian chat with operator queues, account management and conversation transfers. Used Python, SQLite and JavaScript.',
+    fa: 'ساخت چت فارسی محلی با صف اپراتورها، مدیریت حساب‌ها و انتقال گفتگو. ابزارها: Python، SQLite و JavaScript.',
   },
 ];
 
