@@ -110,7 +110,8 @@ for spec in SPECS:
     para(d, spec['title'], fa=fa, size=13, bold=True, after=4, color='000000', keep=True)
     if fa:
         para(d, 'Mehrad Yaghoubi', fa=True, latin=True, size=10.5, after=3, keep=True)
-    para(d, spec['location'], fa=fa, size=10.5, after=3, keep=True)
+    if spec.get('location'):
+        para(d, spec['location'], fa=fa, size=10.5, after=3, keep=True)
     links(d, [(spec['email'], 'mailto:' + spec['email']), (spec['phone'], 'tel:+989912093038')], fa, after=4)
     links(d, spec['links'], fa, after=7)
 

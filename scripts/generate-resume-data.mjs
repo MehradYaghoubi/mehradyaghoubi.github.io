@@ -52,7 +52,7 @@ const documents = [{
       ...experience(en.experienceItems.slice(0, 1), false),
       ...experience(en.experienceItems.slice(1, 2)),
     ]),
-    section('Languages', [paragraph('Persian (native) · English (B1)')]),
+    section('Language', [paragraph('English (B1)')]),
   ],
 }];
 for (const c of [content.en, content.fa]) {
@@ -77,16 +77,14 @@ for (const c of [content.en, content.fa]) {
         links: [...(p.url ? [['GitHub', p.url]] : []), ...(p.paper ? [[fa ? 'پیش‌چاپ' : 'Preprint', p.paper]] : [])],
       }))), pageBreakBefore: true, entrySpacing: 3 },
       section(c.education, education(c)),
-      section(fa ? 'زبان‌ها' : 'Languages', fa
-        ? [paragraph('فارسی، زبان مادری · English (B1)')]
-        : [paragraph('Persian (native) · English (B1)')]),
+      section(fa ? 'زبان' : 'Language', [paragraph(fa ? 'انگلیسی (B1)' : 'English (B1)')]),
     ],
   });
 }
 for (const d of documents) {
   d.phone = d.lang === 'fa' ? site.phoneFa : site.phone;
   d.email = site.email;
-  d.location = content[d.lang].location;
+  if (d.filename.includes('Engineering')) d.location = content[d.lang].location;
   d.links = [
     [d.lang === 'fa' ? 'وب‌سایت شخصی' : 'Portfolio', site.url + '/'],
     ...site.profiles.filter(([label]) => ['GitHub', 'LinkedIn', ...(d.filename.includes('Academic') ? ['Google Scholar', 'ORCID'] : [])].includes(label)),
